@@ -1,0 +1,4 @@
+# WM Class name
+xprop | grep WM_CLASS | awk '{print $4}'
+# make flatpak executable
+sudo ln -s /var/lib/flatpak/exports/bin/name /usr/bin/name

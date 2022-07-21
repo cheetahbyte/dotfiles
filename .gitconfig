@@ -1,3 +1,5 @@
 [user]
 	name = cheetahbyte
 	email = cheetahbyte@users.noreply.github.com
+[init]
+	defaultBranch = main

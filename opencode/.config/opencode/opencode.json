@@ -1,0 +1,90 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "craft-docs": {
+      "type": "remote",
+      "url": "https://mcp.craft.do/my/mcp",
+      "oauth": {},
+      "enabled": true
+    },
+    "linear": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-remote",
+        "https://mcp.linear.app/mcp"
+      ],
+      "enabled": true
+    },
+    "mobbin": {
+      "type": "remote",
+      "url": "https://api.mobbin.com/mcp",
+      "oauth": {},
+      "enabled": true
+    },
+    "apple-docs": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@kimsungwhee/apple-docs-mcp"
+      ],
+      "enabled": true
+    },
+    "swift-patterns": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "swift-patterns-mcp@latest"
+      ],
+      "enabled": true
+    },
+    "duckduckgo": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "duckduckgo-mcp-server"
+      ],
+      "enabled": true
+    }
+  },
+  "permission": {
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "edit": "allow",
+    "webfetch": "allow",
+    "websearch": "allow",
+    "lsp": "allow",
+    "bash": {
+      "*": "ask",
+      "git status": "allow",
+      "git status *": "allow",
+      "git diff": "allow",
+      "git diff *": "allow",
+      "git log": "allow",
+      "git log *": "allow",
+      "pnpm *": "allow",
+      "bun *": "allow",
+      "npm *": "allow",
+      "swift *": "allow",
+      "xcodebuild *": "allow",
+      "go *": "allow",
+      "rm *": "ask",
+      "git commit *": "ask",
+      "git push *": "deny"
+    }
+  },
+  "provider": {
+    "openai": {}
+  },
+  "lsp": true,
+  "plugin": [
+  ]
+}
+

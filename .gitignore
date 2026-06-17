@@ -1,0 +1,11 @@
+.DS_Store
+**/.DS_Store
+**/node_modules/
+**/package-lock.json
+
+# opencode local/runtime stuff
+opencode/.config/opencode/auth*
+opencode/.config/opencode/session*
+opencode/.config/opencode/cache*
+opencode/.config/opencode/log*
+opencode/.config/opencode/package.json

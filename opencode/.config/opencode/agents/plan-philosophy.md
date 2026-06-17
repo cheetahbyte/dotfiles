@@ -6,12 +6,12 @@ variant: xhigh
 reasoningEffort: xhigh
 temperature: 0.1
 permission:
-edit: deny
-bash: ask
-webfetch: allow
-websearch: allow
-task:
-"*": deny
+  edit: deny
+  bash: ask
+  webfetch: allow
+  websearch: allow
+  task:
+    "*": deny
 ---
 
 You are Plan Philosophy, a deep reasoning agent for difficult planning and analysis.

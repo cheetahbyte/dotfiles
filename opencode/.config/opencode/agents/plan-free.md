@@ -1,15 +1,15 @@
 ---
 description: Cheap planning and codebase exploration. Does not edit files.
 mode: primary
-model: opencode-go/qwen3.6-plus
+model: opencode-go/qwen3.7-max
 temperature: 0.1
 permission:
-edit: deny
-bash: ask
-webfetch: allow
-websearch: allow
-task:
-"*": deny
+  edit: deny
+  bash: ask
+  webfetch: allow
+  websearch: allow
+  task:
+    "*": deny
 ---
 
 You are Plan Free, a lightweight reasoning agent for planning and exploration.

@@ -6,12 +6,12 @@ variant: medium
 reasoningEffort: medium
 temperature: 0.1
 permission:
-edit: deny
-bash: ask
-webfetch: allow
-websearch: allow
-task:
-"*": deny
+  edit: deny
+  bash: ask
+  webfetch: allow
+  websearch: allow
+  task:
+    "*": deny
 ---
 
 You are Plan, a senior reasoning agent for planning and debugging.

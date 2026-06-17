@@ -1,0 +1,3 @@
+[submodule "agents/.agents/skills/humanizer"]
+	path = agents/.agents/skills/humanizer
+	url = https://github.com/blader/humanizer

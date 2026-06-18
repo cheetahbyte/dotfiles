@@ -1,3 +1,12 @@
 [submodule "agents/.agents/skills/humanizer"]
 	path = agents/.agents/skills/humanizer
 	url = https://github.com/blader/humanizer
+[submodule "agents/.agents/skills/drawio-skill"]
+	path = agents/.agents/skills/drawio-skill
+	url = https://github.com/Agents365-ai/drawio-skill
+[submodule "agents/.agents/skills/skillspector"]
+	path = agents/.agents/skills/skillspector
+	url = https://github.com/nvidia/skillspector
+[submodule "agents/.agents/skills/hig-doctor"]
+	path = agents/.agents/skills/hig-doctor
+	url = https://github.com/raintree-technology/hig-doctor.git

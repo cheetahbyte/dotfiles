@@ -3,6 +3,7 @@ description: Review code for correctness, security, maintainability, and edge ca
 mode: subagent
 model: openai/gpt-5.5
 temperature: 0.1
+prompt: {file:./prompts/code-review.txt}
 permission:
   edit: deny
   bash: ask

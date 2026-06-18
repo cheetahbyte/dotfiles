@@ -10,3 +10,6 @@
 [submodule "agents/.agents/skills/hig-doctor"]
 	path = agents/.agents/skills/hig-doctor
 	url = https://github.com/raintree-technology/hig-doctor.git
+[submodule "agents/.agents/vendor/swiftui-agent-skill"]
+	path = agents/.agents/vendor/swiftui-agent-skill
+	url = https://github.com/AvdLee/SwiftUI-Agent-Skill.git

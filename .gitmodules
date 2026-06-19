@@ -16,3 +16,6 @@
 [submodule "agents/.agents/vendor/make-interfaces-feel-better"]
 	path = agents/.agents/vendor/make-interfaces-feel-better
 	url = https://github.com/jakubkrehel/make-interfaces-feel-better
+[submodule "agents/.agents/vendor/emilkowalski-skills"]
+	path = agents/.agents/vendor/emilkowalski-skills
+	url = https://github.com/emilkowalski/skills

@@ -13,3 +13,6 @@
 [submodule "agents/.agents/vendor/swiftui-agent-skill"]
 	path = agents/.agents/vendor/swiftui-agent-skill
 	url = https://github.com/AvdLee/SwiftUI-Agent-Skill.git
+[submodule "agents/.agents/vendor/make-interfaces-feel-better"]
+	path = agents/.agents/vendor/make-interfaces-feel-better
+	url = https://github.com/jakubkrehel/make-interfaces-feel-better

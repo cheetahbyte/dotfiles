@@ -7,6 +7,11 @@
       "oauth": {},
       "enabled": true
     },
+    "figma": {
+      "type": "remote",
+      "url": "http://127.0.0.1:3845/mcp",
+      "enabled": true
+    },
     "linear": {
       "type": "local",
       "command": [
@@ -87,4 +92,3 @@
   "plugin": [
   ]
 }
-

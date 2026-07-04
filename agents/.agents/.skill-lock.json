@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "skills": {
+    "opentui": {
+      "source": "anomalyco/opentui",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anomalyco/opentui.git",
+      "skillPath": "packages/web/src/content/SKILL.md",
+      "skillFolderHash": "200613ced9dd6d3bd445de781e7b63787e7fff9f",
+      "installedAt": "2026-07-04T05:05:33.205Z",
+      "updatedAt": "2026-07-04T05:05:33.205Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "eb6a23305aea6e340d14b9de3766e721f9f4861b",
+      "installedAt": "2026-07-04T05:05:39.088Z",
+      "updatedAt": "2026-07-04T05:05:39.088Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed"
+  ]
+}

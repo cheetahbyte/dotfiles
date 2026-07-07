@@ -19,3 +19,7 @@
 [submodule "agents/.agents/vendor/emilkowalski-skills"]
 	path = agents/.agents/vendor/emilkowalski-skills
 	url = https://github.com/emilkowalski/skills
+
+[submodule "agents/.agents/vendor/Fable5res"]
+	path = agents/.agents/vendor/Fable5res
+	url = https://github.com/ahmdd4vd/Fable5res.git

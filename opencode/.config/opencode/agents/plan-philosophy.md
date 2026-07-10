@@ -1,9 +1,9 @@
 ---
 description: Deep planning, architecture, review, and debugging. Does not edit files.
 mode: primary
-model: openai/gpt-5.5
-variant: xhigh
-reasoningEffort: xhigh
+model: openai/gpt-5.6-sol
+variant: high
+reasoningEffort: high
 temperature: 0.1
 permission:
   edit: deny

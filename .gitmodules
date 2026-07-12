@@ -23,3 +23,6 @@
 [submodule "agents/.agents/vendor/Fable5res"]
 	path = agents/.agents/vendor/Fable5res
 	url = https://github.com/ahmdd4vd/Fable5res.git
+[submodule "agents/.agents/vendor/next-safe-action"]
+	path = agents/.agents/vendor/next-safe-action
+	url = https://github.com/next-safe-action/skills

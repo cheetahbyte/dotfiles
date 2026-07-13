@@ -110,6 +110,15 @@
       "skillFolderHash": "6ea3e5f6614e1f9df9c5bde834170bf51f3c09d6",
       "installedAt": "2026-07-13T18:40:41.619Z",
       "updatedAt": "2026-07-13T18:40:41.619Z"
+    },
+    "writing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "skillFolderHash": "ab2adb78b24572c2a80c18158ad699ab065c73df",
+      "installedAt": "2026-07-13T18:41:19.773Z",
+      "updatedAt": "2026-07-13T18:41:19.773Z"
     }
   },
   "dismissed": {

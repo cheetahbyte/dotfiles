@@ -101,6 +101,15 @@
       "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
       "installedAt": "2026-07-13T18:38:18.648Z",
       "updatedAt": "2026-07-13T18:38:18.648Z"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "skillFolderHash": "6ea3e5f6614e1f9df9c5bde834170bf51f3c09d6",
+      "installedAt": "2026-07-13T18:40:41.619Z",
+      "updatedAt": "2026-07-13T18:40:41.619Z"
     }
   },
   "dismissed": {

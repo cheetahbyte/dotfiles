@@ -26,6 +26,3 @@
 [submodule "agents/.agents/vendor/next-safe-action"]
 	path = agents/.agents/vendor/next-safe-action
 	url = https://github.com/next-safe-action/skills
-[submodule "agents/.agents/vendor/superdesign"]
-	path = agents/.agents/vendor/superdesign
-	url = https://github.com/superdesigndev/superdesign-skill

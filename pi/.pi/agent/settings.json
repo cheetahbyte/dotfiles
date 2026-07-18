@@ -1,0 +1,20 @@
+{
+  "lastChangelogVersion": "0.80.10",
+  "theme": "dark",
+  "defaultProvider": "claude-bridge",
+  "defaultModel": "claude-opus-4-8",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:pi-web-access",
+    "npm:@tintinweb/pi-subagents",
+    "npm:pi-mcp-adapter",
+    "npm:pi-lens",
+    "npm:@juicesharp/rpiv-todo",
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:@vanillagreen/pi-claude-bridge"
+  ],
+  "enabledModels": [
+    "openai-codex/gpt-5.6-terra",
+    "openai-codex/gpt-5.6-sol"
+  ]
+}

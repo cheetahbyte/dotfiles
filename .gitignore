@@ -9,3 +9,12 @@ opencode/.config/opencode/session*
 opencode/.config/opencode/cache*
 opencode/.config/opencode/log*
 opencode/.config/opencode/package.json
+
+# pi local/runtime/secret stuff
+pi/.pi/agent/auth*
+pi/.pi/agent/models-store.json
+pi/.pi/agent/sessions/
+pi/.pi/agent/npm/
+pi/.pi/agent/bin/
+pi/.pi/agent/git/
+pi/.pi/agent/trust.json

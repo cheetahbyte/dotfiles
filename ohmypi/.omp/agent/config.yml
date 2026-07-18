@@ -6,13 +6,18 @@ theme:
   light: light
 setupVersion: 1
 modelRoles:
-  default: openai-codex/gpt-5.6-terra:medium
-  smol: opencode-go/deepseek-v4-flash:low
-  slow: openai-codex/gpt-5.6-sol:high
-  vision: openai-codex/gpt-5.6-terra:medium
+  default: openai-codex/gpt-5.6-sol:medium
+  smol: opencode-go/deepseek-v4-flash:medium
+  implementer: opencode-go/deepseek-v4-pro:medium
   plan: openai-codex/gpt-5.6-sol:high
-  designer: openai-codex/gpt-5.6-luna:medium
-  commit: openai-codex/gpt-5.6-luna:low
-  tiny: opencode-go/deepseek-v4-flash:minimal
-  task: opencode-go/qwen3.7-plus:low
-  advisor: openai-codex/gpt-5.6-sol:medium
+
+cycleOrder:
+  - smol
+  - default
+  - implementer
+  - plan
+
+enabledModels:
+  - opencode-go/deepseek-v4-flash
+  - opencode-go/deepseek-v4-pro
+  - openai-codex/gpt-5.6-sol

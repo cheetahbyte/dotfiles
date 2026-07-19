@@ -1,28 +1,6 @@
 [submodule "agents/.agents/skills/humanizer"]
 	path = agents/.agents/skills/humanizer
 	url = https://github.com/blader/humanizer
-[submodule "agents/.agents/skills/drawio-skill"]
-	path = agents/.agents/skills/drawio-skill
-	url = https://github.com/Agents365-ai/drawio-skill
-[submodule "agents/.agents/skills/skillspector"]
-	path = agents/.agents/skills/skillspector
-	url = https://github.com/nvidia/skillspector
-[submodule "agents/.agents/skills/hig-doctor"]
-	path = agents/.agents/skills/hig-doctor
-	url = https://github.com/raintree-technology/hig-doctor.git
-[submodule "agents/.agents/vendor/swiftui-agent-skill"]
-	path = agents/.agents/vendor/swiftui-agent-skill
-	url = https://github.com/AvdLee/SwiftUI-Agent-Skill.git
-[submodule "agents/.agents/vendor/make-interfaces-feel-better"]
-	path = agents/.agents/vendor/make-interfaces-feel-better
-	url = https://github.com/jakubkrehel/make-interfaces-feel-better
-[submodule "agents/.agents/vendor/emilkowalski-skills"]
-	path = agents/.agents/vendor/emilkowalski-skills
-	url = https://github.com/emilkowalski/skills
-
 [submodule "agents/.agents/vendor/Fable5res"]
 	path = agents/.agents/vendor/Fable5res
 	url = https://github.com/ahmdd4vd/Fable5res.git
-[submodule "agents/.agents/vendor/next-safe-action"]
-	path = agents/.agents/vendor/next-safe-action
-	url = https://github.com/next-safe-action/skills

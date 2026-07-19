@@ -10,8 +10,7 @@
     "npm:pi-mcp-adapter",
     "npm:pi-lens",
     "npm:@juicesharp/rpiv-todo",
-    "git:github.com/DietrichGebert/ponytail",
-    "npm:@vanillagreen/pi-claude-bridge"
+    "git:github.com/DietrichGebert/ponytail"
   ],
   "enabledModels": [
     "claude-bridge/claude-opus-4-8",

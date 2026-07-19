@@ -1,0 +1,29 @@
+# Stow default ignore list + macOS cruft.
+# NOTE: a custom ignore file REPLACES stow's built-in defaults,
+# so the defaults are repeated here.
+
+RCS
+.+,v
+
+CVS
+\.\#.+
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~
+\#.*\#
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# macOS
+\.DS_Store
+\._.*

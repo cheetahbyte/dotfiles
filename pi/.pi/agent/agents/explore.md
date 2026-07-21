@@ -2,7 +2,7 @@
 description: Fast read-only agent for locating and understanding code
 model: opencode-go/deepseek-v4-flash
 thinking: low
-tools: read, grep, find, bash
+tools: read, grep, find, bash, ls
 prompt_mode: replace
 ---
 

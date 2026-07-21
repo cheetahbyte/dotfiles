@@ -1,11 +1,4 @@
-# Global Instructions
-
-- Keep responses concise.
-- Prefer simple solutions.
-- Never modify secrets or production infrastructure without asking.
-- Never commit unless explicitly requested.
-
-## Use of subagents
+# Use of subagents
 You are free to use the following subagents:
 - explore: this one should be used to explore the codebase
 - researcher: this one should be used to research/lookback things on the web

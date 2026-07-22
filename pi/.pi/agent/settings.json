@@ -1,20 +1,23 @@
 {
-  "lastChangelogVersion": "0.80.10",
+  "lastChangelogVersion": "0.81.1",
   "theme": "dark",
-  "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-terra",
+  "defaultProvider": "meridian",
+  "defaultModel": "claude-opus-4-8",
   "defaultThinkingLevel": "medium",
+  "quietStartup": true,
   "packages": [
     "npm:pi-web-access",
     "npm:@tintinweb/pi-subagents",
     "npm:pi-mcp-adapter",
     "npm:pi-lens",
     "npm:@juicesharp/rpiv-todo",
-    "git:github.com/DietrichGebert/ponytail"
+    "git:github.com/DietrichGebert/ponytail",
+    "git:https://github.com/cheetahbyte/pi-meridian-extension.git"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",
     "openai-codex/gpt-5.6-luna",
     "openai-codex/gpt-5.6-terra"
-  ]
+  ],
+  "hideThinkingBlock": false
 }

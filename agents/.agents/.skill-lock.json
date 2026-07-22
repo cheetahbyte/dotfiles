@@ -55,7 +55,7 @@
       "skillFolderHash": "c817f6f36acd483294144694a935a76d3e3eb101",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-13T18:28:09.540Z",
-      "updatedAt": "2026-07-13T18:28:09.540Z"
+      "updatedAt": "2026-07-22T07:25:35.292Z"
     },
     "high-end-visual-design": {
       "source": "leonxlnx/taste-skill",
@@ -146,6 +146,25 @@
       "skillFolderHash": "92cc475050a25cd18ad44b31e7333cdb100350aa",
       "installedAt": "2026-07-13T18:42:44.036Z",
       "updatedAt": "2026-07-13T18:42:44.036Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-07-22T07:26:41.490Z",
+      "updatedAt": "2026-07-22T07:26:41.490Z"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "skillFolderHash": "184d485ae68a2132893a94239b2b85d253e6152b",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-22T07:26:47.645Z",
+      "updatedAt": "2026-07-22T07:26:47.645Z"
     }
   },
   "dismissed": {

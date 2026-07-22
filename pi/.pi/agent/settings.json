@@ -1,10 +1,13 @@
 {
   "lastChangelogVersion": "0.81.1",
   "theme": "dark",
-  "defaultProvider": "meridian",
-  "defaultModel": "claude-opus-4-8",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-terra",
   "defaultThinkingLevel": "medium",
   "quietStartup": true,
+  "terminal": {
+    "showImages": false
+  },
   "packages": [
     "npm:pi-web-access",
     "npm:@tintinweb/pi-subagents",
@@ -17,7 +20,9 @@
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",
     "openai-codex/gpt-5.6-luna",
-    "openai-codex/gpt-5.6-terra"
+    "openai-codex/gpt-5.6-terra",
+    "meridian/claude-sonnet-5",
+    "meridian/claude-opus-4-8"
   ],
   "hideThinkingBlock": false
 }

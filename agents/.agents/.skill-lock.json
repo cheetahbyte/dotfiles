@@ -165,6 +165,15 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-22T07:26:47.645Z",
       "updatedAt": "2026-07-22T07:26:47.645Z"
+    },
+    "systematic-debugging": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "skillFolderHash": "5702624a1f0e5ad478234442ce5cde038a525465",
+      "installedAt": "2026-07-22T19:04:01.801Z",
+      "updatedAt": "2026-07-22T19:04:01.801Z"
     }
   },
   "dismissed": {

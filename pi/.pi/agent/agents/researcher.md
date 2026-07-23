@@ -2,7 +2,7 @@
 description: Fast read-only agent for researching the web
 model: opencode-go/deepseek-v4-flash
 thinking: medium
-tools: search, fetch_content
+tools: ext:pi-mcp-adapter/duckduckgo_search, ext:pi-mcp-adapter/duckduckgo_fetch_content
 prompt_mode: replace
 ---
 

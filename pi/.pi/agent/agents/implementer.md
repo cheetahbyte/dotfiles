@@ -1,7 +1,7 @@
 ---
 description: Implements well-scoped coding tasks, verifies the result, and reports concise implementation details
-model: opencode-go/deepseek-v4-pro
-thinking: low
+model: opencode-go/deepseek-v4-flash
+thinking: high
 tools: read, grep, find, bash, edit, write
 prompt_mode: replace
 ---

@@ -174,6 +174,15 @@
       "skillFolderHash": "5702624a1f0e5ad478234442ce5cde038a525465",
       "installedAt": "2026-07-22T19:04:01.801Z",
       "updatedAt": "2026-07-22T19:04:01.801Z"
+    },
+    "caveman-review": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman-review/SKILL.md",
+      "skillFolderHash": "2d9762b7aec395b9713fde57fb8965bc3bbd2c3f",
+      "installedAt": "2026-07-23T17:26:40.943Z",
+      "updatedAt": "2026-07-23T17:26:40.943Z"
     }
   },
   "dismissed": {

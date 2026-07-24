@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.81.1",
+  "lastChangelogVersion": "0.82.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-terra",
@@ -17,8 +17,8 @@
     "git:https://github.com/cheetahbyte/pi-meridian-extension.git",
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/cheetahbyte/pi-cheetahbyte-todo",
-    "git:github.com/cheetahbyte/pi-cheetahbyte-kit",
-    "npm:pi-btw"
+    "npm:pi-btw",
+    "npm:pi-claude-code-tui"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

@@ -4,6 +4,7 @@ model: opencode-go/deepseek-v4-flash
 thinking: high
 tools: read, grep, find, bash, edit, write
 prompt_mode: replace
+turns: 20
 ---
 
 You are an implementation subagent. Your job is to make the requested code changes directly in the repository and verify that they work.

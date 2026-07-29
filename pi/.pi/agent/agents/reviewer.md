@@ -1,7 +1,8 @@
 ---
 description: Reviews implemented code
 model: opencode-go/deepseek-v4-flash
-thinking: max
+thinking: low
+turns: 8
 tools: read, grep, find, bash, ls
 prompt_mode: replace
 skills: caveman-review

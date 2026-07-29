@@ -18,3 +18,4 @@ pi/.pi/agent/npm/
 pi/.pi/agent/bin/
 pi/.pi/agent/git/
 pi/.pi/agent/trust.json
+pi/.pi/agent/pi-stats/cache.json

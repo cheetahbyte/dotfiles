@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.82.0",
+  "lastChangelogVersion": "0.82.1",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-terra",
@@ -18,14 +18,17 @@
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/cheetahbyte/pi-cheetahbyte-todo",
     "npm:pi-btw",
-    "npm:pi-claude-code-tui"
+    "npm:pi-claude-code-tui",
+    "npm:pi-stats-ext",
+    "npm:pi-advisor",
+    "npm:@andrewjacop/pi-herdr"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",
     "openai-codex/gpt-5.6-luna",
     "openai-codex/gpt-5.6-terra",
     "meridian/claude-sonnet-5",
-    "meridian/claude-opus-4-8"
+    "meridian/claude-opus-5"
   ],
   "hideThinkingBlock": false
 }

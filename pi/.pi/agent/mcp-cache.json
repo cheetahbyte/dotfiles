@@ -2,7 +2,7 @@
   "version": 1,
   "servers": {
     "duckduckgo": {
-      "configHash": "2adaa37b662fa04ec6305aa389e65a93f7102dd773b9810f7dd0dc1670deed9c",
+      "configHash": "630b93b28e864c31acf24f6992eb90b968420e8d73bd1d4eaecfef42ea413d73",
       "tools": [
         {
           "name": "search",
@@ -72,7 +72,8 @@
         }
       ],
       "resources": [],
-      "cachedAt": 1784828492849
+      "prompts": [],
+      "cachedAt": 1785260744526
     }
   }
 }

@@ -15,10 +15,11 @@ Delegate to a custom agent when the task matches its role — don't do inline wh
 
 | Agent | Role | Tools | Use for | Don't use for |
 |---|---|---|---|---|
-| `implementer` | Writes + verifies code | read, grep, find, bash, edit, write | Well-scoped coding tasks that need edits and a test/lint pass | Ambiguous asks needing back-and-forth first |
-| `reviewer` | Read-only diff/code reviewer | read, grep, find, bash, ls | Reviewing a diff or file for bugs/regressions | Style nits, or anything needing a fix applied |
-| `researcher` | Web research | ext:pi-mcp-adapter/duckduckgo_search, ext:pi-mcp-adapter/duckduckgo_fetch_content | Questions needing current web info, docs lookup | Anything answerable from the repo itself |
-| `security-researcher` | Security/vuln audit | read, grep, find, bash | Auditing auth, injection surfaces, crypto, supply chain | Routine code review (use `reviewer`) |
+| `Explorer` | Fast read-only codebase navigator | read, grep, find, bash, ls | Locating files, symbols, references, callers, imports, configuration, and data flow | Implementing changes, broad code review, builds, or tests |
+| `Implementer` | Writes + verifies code | read, grep, find, bash, edit, write | Well-scoped coding tasks that need edits and a test/lint pass | Ambiguous asks needing back-and-forth first |
+| `Reviewer` | Read-only diff/code reviewer | read, grep, find, bash, ls | Reviewing a diff or file for bugs/regressions | Style nits, or anything needing a fix applied |
+| `Researcher` | Web research | ext:pi-mcp-adapter/duckduckgo_search, ext:pi-mcp-adapter/duckduckgo_fetch_content | Questions needing current web info, docs lookup | Anything answerable from the repo itself |
+| `SecurityResearcher` | Security/vuln audit | read, grep, find, bash | Auditing auth, injection surfaces, crypto, supply chain | Routine code review (use `reviewer`) |
 
 Spawn via the `Agent` tool with `subagent_type` set to the agent's filename (case-insensitive). Give each a self-contained prompt — these are `prompt_mode: replace`, so they get **no** AGENTS.md/CLAUDE.md inheritance and no memory of this conversation unless you say so explicitly.
 

@@ -2,7 +2,7 @@
 name: using-subagents
 description: >
   Guide for delegating work to this project's custom pi subagents:
-  explore, implementer, reviewer, researcher, and security-researcher.
+  explore, implementer, reviewer, researcher, and security-researcher, specreview.
   Trigger when a task clearly matches one of these roles.
 ---
 
@@ -15,8 +15,9 @@ The parent agent owns planning, decomposition, coordination, and final integrati
 | Agent | Use for | Don't use for |
 |---|---|---|
 | `Explore` | Locating files, symbols, references, configuration, patterns, and data flow | Editing, builds, or broad reviews |
+| `SpecReviewer` | Design docs, RFCs, and plans before implementation starts — unverified claims about existing behaviour, missing failure modes, protocol mismatches | Reviewing code that already exists, or prose and structure feedback |
 | `Implementer` | One focused, well-scoped change with known target files and targeted verification | Broad repository exploration or executing an entire multi-part plan |
-| `Reviewer` | Reviewing completed changes for bugs and regressions | Style-only feedback or applying fixes |
+| `Reviewer` | Reviewing completed changes for bugs and regressions | Style-only feedback, applying fixes, or design docs that describe unwritten code |
 | `Researcher` | Current public information and external documentation | Questions answerable from the repository |
 | `SecurityResearcher` | Auth, injection, crypto, secrets, permissions, and supply-chain risks | Routine code review |
 

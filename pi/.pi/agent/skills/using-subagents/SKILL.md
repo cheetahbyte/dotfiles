@@ -77,25 +77,76 @@ Ask Explore for a concise implementation brief containing:
 
 Do not pass the full exploration transcript to Implementers.
 
+## Implementer dispatch requirements
+
+Do not dispatch an Implementer until the parent knows all of the following:
+
+- one concrete outcome
+- exact target files
+- relevant symbols or interfaces
+- required changes
+- an existing pattern to follow, when applicable
+- explicit boundaries and non-goals
+- one exact validation command
+- dependencies on earlier work packages
+
+If these details are not known, dispatch Explore first.
+
+Use this structure for every Implementer prompt:
+
+```text
+Task:
+- One concrete outcome.
+
+Target files:
+- Exact files expected to change.
+
+Relevant symbols:
+- Functions, types, routes, commands, or interfaces involved.
+
+Required changes:
+1. ...
+2. ...
+
+Existing pattern:
+- File and symbol demonstrating the intended approach.
+
+Boundaries:
+- Files or components that must not change.
+- Work assigned to other Implementers.
+
+Validation:
+- One exact command to run.
+
+Dependencies:
+- Relevant results or interfaces from earlier tasks.
+````
+
+Do not send vague prompts such as “implement this part of the plan” or “explore as needed.”
+
 ## Implementer handoff
 
-Give each Implementer:
+Give each Implementer only:
 
-- the original requirement relevant to its work package
-- the relevant part of the Explore brief
-- exact target files or ownership boundaries
-- explicit non-goals
-- expected validation
+* the requirement relevant to its work package
+* the relevant part of the Explore brief
+* exact target files and symbols
+* explicit non-goals
+* expected validation
+* relevant interfaces from prerequisite tasks
 
 Instruct it to:
 
-- avoid broad repository rediscovery
-- read only direct dependencies when necessary
-- make the smallest coherent change
-- batch related edits
-- run targeted verification
-- stop and report if the brief is materially wrong
-- not take over unrelated parts of the plan
+* avoid broad repository rediscovery
+* begin from the supplied files
+* read only direct dependencies when necessary
+* make the smallest coherent change
+* batch related edits
+* run targeted verification
+* stop and report if the brief is materially wrong
+* not take over unrelated parts of the plan
+
+Do not paste the full plan, previous subagent transcripts, or accumulated task history into later dispatches.
 
 ## Reviewer handoff
 
@@ -103,11 +154,11 @@ Give Reviewer the requirement, combined diff, implementation summary, and valida
 
 Ask it to report only material findings:
 
-- correctness issues
-- regressions
-- broken edge cases
-- security problems
-- missing validation
+* correctness issues
+* regressions
+* broken edge cases
+* security problems
+* missing validation
 
 Send findings back as focused fix tasks. Do not ask one Implementer to redo or re-explore the entire change.
 
@@ -115,12 +166,13 @@ Send findings back as focused fix tasks. Do not ask one Implementer to redo or r
 
 Do not:
 
-- let Explore and Implementers repeat the same discovery
-- pass full subagent transcripts between agents
-- give one Implementer the whole project plan
-- spawn multiple agents that edit the same files concurrently
-- ask Reviewer to recreate the implementation process
-- run broad test suites when targeted checks are sufficient
-- delegate work whose coordination overhead exceeds the task itself
+* let Explore and Implementers repeat the same discovery
+* pass full subagent transcripts between agents
+* give one Implementer the whole project plan
+* dispatch an Implementer with missing files, symbols, boundaries, or validation
+* spawn multiple agents that edit the same files concurrently
+* ask Reviewer to recreate the implementation process
+* run broad test suites when targeted checks are sufficient
+* delegate work whose coordination overhead exceeds the task itself
 
 Delegation should reduce context and duplicated work, not increase it.

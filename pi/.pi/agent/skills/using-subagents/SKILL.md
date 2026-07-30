@@ -1,34 +1,126 @@
 ---
 name: using-subagents
 description: >
-  Decision guide for delegating work to this project's custom pi subagents
-  (implementer, reviewer, researcher, security-researcher) instead of doing
-  it inline. Covers when to spawn which agent, and the frontmatter gotchas
-  that silently break a custom agent (tool naming, skill loading, model
-  resolution). Trigger: "use a subagent", "delegate", "spawn implementer/
-  reviewer/researcher", or when a task clearly matches one agent's role.
+  Guide for delegating work to this project's custom pi subagents:
+  explore, implementer, reviewer, researcher, and security-researcher.
+  Trigger when a task clearly matches one of these roles.
 ---
 
-Delegate to a custom agent when the task matches its role — don't do inline what a subagent does cheaper/cleaner, and don't spawn one for a two-line edit.
+Delegate when subagents can handle the work more cleanly or cheaply. Do not spawn one for trivial edits.
 
-## Agent types
+The parent agent owns planning, decomposition, coordination, and final integration. Do not give an entire multi-part plan to one general-purpose Implementer.
 
-| Agent | Role | Tools | Use for | Don't use for |
-|---|---|---|---|---|
-| `Explore` | Fast read-only codebase navigator | read, grep, find, bash, ls | Locating files, symbols, references, callers, imports, configuration, and data flow | Implementing changes, broad code review, builds, or tests |
-| `Implementer` | Writes + verifies code | read, grep, find, bash, edit, write | Well-scoped coding tasks that need edits and a test/lint pass | Ambiguous asks needing back-and-forth first |
-| `Reviewer` | Read-only diff/code reviewer | read, grep, find, bash, ls | Reviewing a diff or file for bugs/regressions | Style nits, or anything needing a fix applied |
-| `Researcher` | Web research | ext:pi-mcp-adapter/duckduckgo_search, ext:pi-mcp-adapter/duckduckgo_fetch_content | Questions needing current web info, docs lookup | Anything answerable from the repo itself |
-| `SecurityResearcher` | Security/vuln audit | read, grep, find, bash | Auditing auth, injection surfaces, crypto, supply chain | Routine code review (use `reviewer`) |
+## Agents
 
-Spawn via the `Agent` tool with `subagent_type` set to the agent's filename (case-insensitive). Give each a self-contained prompt — these are `prompt_mode: replace`, so they get **no** AGENTS.md/CLAUDE.md inheritance and no memory of this conversation unless you say so explicitly.
+| Agent | Use for | Don't use for |
+|---|---|---|
+| `Explore` | Locating files, symbols, references, configuration, patterns, and data flow | Editing, builds, or broad reviews |
+| `Implementer` | One focused, well-scoped change with known target files and targeted verification | Broad repository exploration or executing an entire multi-part plan |
+| `Reviewer` | Reviewing completed changes for bugs and regressions | Style-only feedback or applying fixes |
+| `Researcher` | Current public information and external documentation | Questions answerable from the repository |
+| `SecurityResearcher` | Auth, injection, crypto, secrets, permissions, and supply-chain risks | Routine code review |
 
-## Frontmatter gotchas (found the hard way in this repo)
+Spawn through the `Agent` tool with `subagent_type` matching the agent filename.
 
-These break an agent silently — no error, just quietly-wrong behavior:
+Agents use `prompt_mode: replace`, so every prompt must include all required context.
 
-- **`tools:` plain names only match the 7 builtins** (`read grep find bash write edit ls`). Anything from an extension or MCP server needs `ext:<extension>/<toolname>` — and the tool name must be the *registered* name, not the MCP server's raw tool name. pi-mcp-adapter prefixes MCP direct tools with the server name by default (`toolPrefix: "server"`), so DuckDuckGo's raw `search`/`fetch_content` register as `duckduckgo_search`/`duckduckgo_fetch_content`. Check `mcp-cache.json` for raw names, then prefix by server name unless `mcp.json` sets `toolPrefix: none`.
-- **Mentioning a skill in the prompt body does nothing.** Skills only load via the `skills:` frontmatter field (or `skills: true` to inherit the parent's set). If an agent's prompt says "use the X skill," it needs `skills: X` in frontmatter or it's talking to nobody.
-- **`model:` pins fail silently to inherit-parent** if the provider/model isn't in the registry (`models-store.json`) — no error, just quietly runs on whatever model the parent was using. Worth a glance at `models-store.json` when an agent's behavior doesn't match its supposed model.
+## Default flow
 
-When authoring or editing a custom agent `.md`, verify tool names against the actual extension/MCP source (or `mcp-cache.json`) rather than trusting what "looks right" — plain names and skill mentions both fail without erroring.
+Use:
+
+- `Implementer` when the target files and required change are already clear
+- `Explore → Implementer` when repository discovery is needed
+- `Implementer → Reviewer` for meaningful completed changes
+- `Explore → focused Implementers → Reviewer` for multi-part work
+- `Researcher` for current external information
+- `SecurityResearcher` for security-sensitive work
+
+Do not assign discovery, implementation, testing, cleanup, and review to one subagent.
+
+## Split implementation work
+
+When a task contains independent or weakly coupled changes, split it into multiple focused Implementers.
+
+Each Implementer should receive:
+
+- one concrete responsibility
+- a small set of target files
+- explicit boundaries
+- the relevant part of the plan
+- one focused validation command
+
+Good split:
+
+- Implementer A: backend API change
+- Implementer B: frontend integration
+- Implementer C: tests or migration
+
+Bad split:
+
+- one Implementer receives the full backend, frontend, tests, documentation, and cleanup plan
+
+Run Implementers in parallel only when they will not edit overlapping files or depend on unfinished work. Otherwise run them sequentially and pass only the relevant result forward.
+
+Use one final Reviewer for the combined result.
+
+## Explore handoff
+
+Ask Explore for a concise implementation brief containing:
+
+- relevant files and symbols
+- current data or control flow
+- existing patterns to follow
+- concrete implementation steps
+- possible work-package boundaries
+- likely validation commands
+- unresolved uncertainties
+
+Do not pass the full exploration transcript to Implementers.
+
+## Implementer handoff
+
+Give each Implementer:
+
+- the original requirement relevant to its work package
+- the relevant part of the Explore brief
+- exact target files or ownership boundaries
+- explicit non-goals
+- expected validation
+
+Instruct it to:
+
+- avoid broad repository rediscovery
+- read only direct dependencies when necessary
+- make the smallest coherent change
+- batch related edits
+- run targeted verification
+- stop and report if the brief is materially wrong
+- not take over unrelated parts of the plan
+
+## Reviewer handoff
+
+Give Reviewer the requirement, combined diff, implementation summary, and validation already performed.
+
+Ask it to report only material findings:
+
+- correctness issues
+- regressions
+- broken edge cases
+- security problems
+- missing validation
+
+Send findings back as focused fix tasks. Do not ask one Implementer to redo or re-explore the entire change.
+
+## Avoid duplicate work
+
+Do not:
+
+- let Explore and Implementers repeat the same discovery
+- pass full subagent transcripts between agents
+- give one Implementer the whole project plan
+- spawn multiple agents that edit the same files concurrently
+- ask Reviewer to recreate the implementation process
+- run broad test suites when targeted checks are sufficient
+- delegate work whose coordination overhead exceeds the task itself
+
+Delegation should reduce context and duplicated work, not increase it.

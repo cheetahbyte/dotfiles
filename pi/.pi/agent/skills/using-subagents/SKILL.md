@@ -120,7 +120,7 @@ Validation:
 
 Dependencies:
 - Relevant results or interfaces from earlier tasks.
-````
+```
 
 Do not send vague prompts such as “implement this part of the plan” or “explore as needed.”
 

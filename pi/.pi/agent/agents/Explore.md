@@ -1,6 +1,6 @@
 ---
 description: Fast read-only agent for locating and understanding code
-model: opencode-go/deepseek-v4-flash
+model: openai/gpt-5.6-luna
 thinking: low
 tools: read, grep, find, bash, ls
 prompt_mode: replace

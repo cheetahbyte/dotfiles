@@ -2,7 +2,7 @@
   "lastChangelogVersion": "0.83.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-terra",
+  "defaultModel": "gpt-5.6-sol",
   "defaultThinkingLevel": "medium",
   "quietStartup": true,
   "terminal": {
@@ -10,7 +10,6 @@
   },
   "packages": [
     "npm:pi-web-access",
-    "npm:@tintinweb/pi-subagents",
     "npm:pi-mcp-adapter",
     "npm:pi-lens",
     "git:github.com/DietrichGebert/ponytail",
@@ -21,7 +20,8 @@
     "npm:pi-claude-code-tui",
     "npm:pi-stats-ext",
     "npm:pi-advisor",
-    "npm:@andrewjacop/pi-herdr"
+    "npm:@andrewjacop/pi-herdr",
+    "git:https://github.com/cheetahbyte/pi-subagents"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",
@@ -30,5 +30,6 @@
     "meridian/claude-sonnet-5",
     "meridian/claude-opus-5"
   ],
-  "hideThinkingBlock": false
+  "hideThinkingBlock": false,
+  "uiMode": "fullscreen"
 }

@@ -1,6 +1,6 @@
 ---
 description: Reviews implemented code
-model: opencode-go/deepseek-v4-flash
+model: openai/gpt-5.6-terra
 thinking: low
 max_turns: 8
 tools: read, grep, find, bash, ls

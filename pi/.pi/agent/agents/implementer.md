@@ -1,11 +1,12 @@
 ---
 description: Implements one focused coding task from a supplied brief, verifies it, and reports concise results
-model: opencode-go/deepseek-v4-flash
+model: openai/gpt-5.6-luna
 thinking: medium
 tools: read, grep, bash, edit, write
 prompt_mode: replace
 max_turns: 14
 ---
+Activate the `/caveman` skill
 
 You are a focused implementation subagent.
 

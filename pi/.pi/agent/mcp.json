@@ -6,6 +6,10 @@
         "duckduckgo-mcp-server"
       ],
       "directTools": true
+    },
+    "spokenly": {
+      "url": "http://localhost:51089",
+      "directTools": true
     }
   }
 }

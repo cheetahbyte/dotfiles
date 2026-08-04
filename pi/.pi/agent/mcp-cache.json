@@ -74,6 +74,75 @@
       "resources": [],
       "prompts": [],
       "cachedAt": 1785478026438
+    },
+    "spokenly": {
+      "configHash": "9943014e4103186ef54d132d8ad600968e765878e4ebe19020d3710ee19d0ac4",
+      "tools": [
+        {
+          "name": "ask_user_dictation",
+          "description": "Voice dictation via Spokenly (app.spokenly, running locally). This is the user's PREFERRED default way to communicate. Call this tool by default whenever awaiting any user input. Each question starts a separate recording session. The user presses Enter after speaking, or Escape to skip.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "questions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Questions to display to the user so they know what to say"
+              }
+            },
+            "required": [
+              "questions"
+            ]
+          }
+        },
+        {
+          "name": "transcribe_file",
+          "description": "Transcribe an audio or video file.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "speakers": {
+                "description": "Identify speakers locally and include labels in output (default: false)",
+                "type": "boolean"
+              },
+              "speaker_names": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "description": "Names used for the speaker labels, in channel order for separate_channels or in order of first appearance for speakers"
+              },
+              "format": {
+                "type": "string",
+                "description": "Output format (default: text)",
+                "enum": [
+                  "text",
+                  "srt",
+                  "vtt",
+                  "markdown",
+                  "json"
+                ]
+              },
+              "separate_channels": {
+                "description": "Transcribe every channel of a multichannel file separately and label each one as its own speaker (default: false)",
+                "type": "boolean"
+              },
+              "file_path": {
+                "description": "Absolute path to the audio or video file",
+                "type": "string"
+              }
+            },
+            "required": [
+              "file_path"
+            ]
+          }
+        }
+      ],
+      "resources": [],
+      "prompts": [],
+      "cachedAt": 1785694097640
     }
   }
 }

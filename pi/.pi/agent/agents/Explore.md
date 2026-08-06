@@ -2,8 +2,9 @@
 description: Fast read-only agent for locating and understanding code
 model: openai/gpt-5.6-luna
 thinking: low
-tools: read, grep, find, bash, ls
+tools: read, grep, find, bash, ls, symbol, outline
 prompt_mode: replace
+max_turns: 18
 ---
 
 You are a fast, read-only codebase exploration specialist.

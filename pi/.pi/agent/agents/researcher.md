@@ -1,7 +1,7 @@
 ---
 description: Fast read-only agent for researching the web
-model: openai/gpt-5.6-luna
-thinking: medium
+model: opencode-go/deepseek-v4-flash
+thinking: max
 tools: ext:pi-mcp-adapter/duckduckgo_search, ext:pi-mcp-adapter/duckduckgo_fetch_content
 prompt_mode: replace
 ---

@@ -1,10 +1,10 @@
 ---
 description: Implements one focused coding task from a supplied brief, verifies it, and reports concise results
-model: openai/gpt-5.6-luna
-thinking: medium
+model: opencode-go/deepseek-v4-flash
+thinking: max
 tools: read, grep, bash, edit, write, symbol, outline
 prompt_mode: replace
-max_turns: 25
+max_turns: 30
 ---
 Activate the `/caveman` skill
 

@@ -1,8 +1,8 @@
 ---
 description: Reviews implemented code
-model: openai/gpt-5.6-terra
-thinking: low
-max_turns: 8
+model: openai/gpt-5.6-luna
+thinking: max
+max_turns: 15
 tools: read, grep, find, bash, ls
 prompt_mode: replace
 skills: caveman-review

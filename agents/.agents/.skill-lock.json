@@ -26,18 +26,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/brainstorming/SKILL.md",
-      "skillFolderHash": "b14f49a55a8387cfa12ac89794ab79698d7fddbb",
+      "skillFolderHash": "a24cbf66c526b88d26cb9c816a843df9e50d0fc7",
       "installedAt": "2026-07-13T18:30:29.332Z",
-      "updatedAt": "2026-07-13T18:30:29.332Z"
+      "updatedAt": "2026-08-07T18:29:07.688Z"
     },
     "shadcn": {
       "source": "shadcn/ui",
       "sourceType": "github",
       "sourceUrl": "https://github.com/shadcn/ui.git",
       "skillPath": "skills/shadcn/SKILL.md",
-      "skillFolderHash": "962eb7ef77f17e0bce530153d4fec2136c5fa061",
+      "skillFolderHash": "0a31c3c2535a62b22bf23a1b10a142178a6b7dbf",
       "installedAt": "2026-07-13T18:31:18.022Z",
-      "updatedAt": "2026-07-13T18:31:18.022Z"
+      "updatedAt": "2026-08-07T18:29:11.716Z"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
@@ -53,9 +53,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-plans/SKILL.md",
-      "skillFolderHash": "ab2adb78b24572c2a80c18158ad699ab065c73df",
+      "skillFolderHash": "6239ac643c14531e67ded0f1a2885c5072d426c6",
       "installedAt": "2026-07-13T18:41:19.773Z",
-      "updatedAt": "2026-07-13T18:41:19.773Z"
+      "updatedAt": "2026-08-07T18:29:09.165Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -65,15 +65,6 @@
       "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
       "installedAt": "2026-07-22T07:26:41.490Z",
       "updatedAt": "2026-07-22T07:26:41.490Z"
-    },
-    "systematic-debugging": {
-      "source": "obra/superpowers",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/obra/superpowers.git",
-      "skillPath": "skills/systematic-debugging/SKILL.md",
-      "skillFolderHash": "5702624a1f0e5ad478234442ce5cde038a525465",
-      "installedAt": "2026-07-22T19:04:01.801Z",
-      "updatedAt": "2026-07-22T19:04:01.801Z"
     },
     "caveman-review": {
       "source": "juliusbrussee/caveman",
@@ -89,10 +80,29 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/wayfinder/SKILL.md",
-      "skillFolderHash": "33ed747fb30668c0e7b61698af5268c25c0d75cb",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "48c3a8b0a9705d6310d37f7f9b53bcb2c55955c7",
       "installedAt": "2026-08-02T17:38:55.093Z",
-      "updatedAt": "2026-08-02T17:38:55.093Z"
+      "updatedAt": "2026-08-07T18:29:06.384Z"
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "skillFolderHash": "463c81def888fefa77b894837d301d9ed70e0994",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-07T18:28:23.943Z",
+      "updatedAt": "2026-08-07T18:28:23.943Z"
+    },
+    "resolving-merge-conflicts": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/resolving-merge-conflicts/SKILL.md",
+      "skillFolderHash": "6aa1ed0b40fac0ebea5c0cf6f2addf82c99b6323",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-07T18:32:16.356Z",
+      "updatedAt": "2026-08-07T18:32:16.356Z"
     }
   },
   "dismissed": {

@@ -21,15 +21,6 @@
       "installedAt": "2026-07-13T18:28:09.540Z",
       "updatedAt": "2026-07-22T07:25:35.292Z"
     },
-    "brainstorming": {
-      "source": "obra/superpowers",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/obra/superpowers.git",
-      "skillPath": "skills/brainstorming/SKILL.md",
-      "skillFolderHash": "a24cbf66c526b88d26cb9c816a843df9e50d0fc7",
-      "installedAt": "2026-07-13T18:30:29.332Z",
-      "updatedAt": "2026-08-07T18:29:07.688Z"
-    },
     "shadcn": {
       "source": "shadcn/ui",
       "sourceType": "github",
@@ -47,15 +38,6 @@
       "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
       "installedAt": "2026-07-13T18:38:18.648Z",
       "updatedAt": "2026-07-13T18:38:18.648Z"
-    },
-    "writing-plans": {
-      "source": "obra/superpowers",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/obra/superpowers.git",
-      "skillPath": "skills/writing-plans/SKILL.md",
-      "skillFolderHash": "6239ac643c14531e67ded0f1a2885c5072d426c6",
-      "installedAt": "2026-07-13T18:41:19.773Z",
-      "updatedAt": "2026-08-07T18:29:09.165Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -103,6 +85,44 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-07T18:32:16.356Z",
       "updatedAt": "2026-08-07T18:32:16.356Z"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "skillFolderHash": "bd9c9c4762db0a9a094fd419316ebd4b0444d06e",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-07T19:42:40.185Z",
+      "updatedAt": "2026-08-07T19:42:40.185Z"
+    },
+    "wait-what": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/wait-what/SKILL.md",
+      "skillFolderHash": "6abe708f1bf253158a037ac49faea2944e2809dc",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-07T19:43:13.936Z",
+      "updatedAt": "2026-08-07T19:43:13.936Z"
+    },
+    "brainstorming": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "skillFolderHash": "0a9b8a7940a3db262e2d4ab18ac994c685838336",
+      "installedAt": "2026-08-07T20:15:30.369Z",
+      "updatedAt": "2026-08-07T20:15:30.369Z"
+    },
+    "writing-plans": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "skillFolderHash": "a179fda84c5a24f6eacb0b5270111b51bff13154",
+      "installedAt": "2026-08-07T20:15:30.370Z",
+      "updatedAt": "2026-08-07T20:15:30.370Z"
     }
   },
   "dismissed": {

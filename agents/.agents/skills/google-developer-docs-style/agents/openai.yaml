@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Developer Docs Style"
+  short_description: "Write clear, accessible technical documentation"
+  default_prompt: "Apply Google developer documentation style to this technical documentation."

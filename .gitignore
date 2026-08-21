@@ -19,3 +19,8 @@ pi/.pi/agent/bin/
 pi/.pi/agent/git/
 pi/.pi/agent/trust.json
 pi/.pi/agent/pi-stats/cache.json
+pi/.pi/agent/telemetry.db*
+tool-stats.jsonl
+mcp-cache.json
+usage-data/
+pi-stats/

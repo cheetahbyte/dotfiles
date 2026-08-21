@@ -2,8 +2,8 @@
   "lastChangelogVersion": "0.84.2",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-sol",
-  "defaultThinkingLevel": "medium",
+  "defaultModel": "gpt-5.6-luna",
+  "defaultThinkingLevel": "high",
   "quietStartup": true,
   "terminal": {
     "showImages": false
@@ -19,7 +19,11 @@
     "npm:pi-claude-code-tui",
     "npm:pi-stats-ext",
     "npm:pi-advisor",
-    "npm:@andrewjacop/pi-herdr"
+    "npm:@andrewjacop/pi-herdr",
+    "npm:@observal/pi-insights",
+    "npm:@spences10/pi-telemetry",
+    "npm:pi-metrics",
+    "npm:pi-tool-stats"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

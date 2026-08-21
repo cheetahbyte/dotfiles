@@ -113,7 +113,7 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "skillFolderHash": "0a9b8a7940a3db262e2d4ab18ac994c685838336",
       "installedAt": "2026-08-07T20:15:30.369Z",
-      "updatedAt": "2026-08-18T15:37:10.327Z"
+      "updatedAt": "2026-08-21T07:36:07.631Z"
     },
     "writing-plans": {
       "source": "cheetahbyte/skills",
@@ -122,7 +122,7 @@
       "skillPath": "skills/writing-plans/SKILL.md",
       "skillFolderHash": "a179fda84c5a24f6eacb0b5270111b51bff13154",
       "installedAt": "2026-08-07T20:15:30.370Z",
-      "updatedAt": "2026-08-18T15:37:10.330Z"
+      "updatedAt": "2026-08-21T07:36:07.637Z"
     },
     "humanizer": {
       "source": "blader/humanizer",
@@ -140,7 +140,7 @@
       "skillPath": "skills/pare/SKILL.md",
       "skillFolderHash": "ac2d43c47a59bac369e72da115a33505fe0401aa",
       "installedAt": "2026-08-12T05:35:41.943Z",
-      "updatedAt": "2026-08-18T15:37:10.330Z"
+      "updatedAt": "2026-08-21T07:36:07.636Z"
     },
     "google-developer-docs-style": {
       "source": "cheetahbyte/skills",
@@ -149,7 +149,16 @@
       "skillPath": "skills/google-developer-docs-style/SKILL.md",
       "skillFolderHash": "bcbd2aaa604204aea7f6f99a415557de43f852e2",
       "installedAt": "2026-08-18T15:37:10.329Z",
-      "updatedAt": "2026-08-18T15:37:10.329Z"
+      "updatedAt": "2026-08-21T07:36:07.634Z"
+    },
+    "engineering-defaults": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
+      "skillPath": "skills/engineering-defaults/SKILL.md",
+      "skillFolderHash": "86e55f475e9d447b33a30e4969f2134e5f7f2f82",
+      "installedAt": "2026-08-21T07:36:07.634Z",
+      "updatedAt": "2026-08-21T07:36:07.634Z"
     }
   },
   "dismissed": {

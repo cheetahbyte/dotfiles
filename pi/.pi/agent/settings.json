@@ -1,29 +1,27 @@
 {
   "lastChangelogVersion": "0.84.2",
   "theme": "dark",
-  "defaultProvider": "xai",
-  "defaultModel": "grok-4.6",
-  "defaultThinkingLevel": "high",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "minimal",
   "quietStartup": true,
   "terminal": {
     "showImages": false
   },
   "packages": [
-    "npm:pi-web-access",
     "npm:pi-mcp-adapter",
     "npm:pi-lens",
     "git:github.com/DietrichGebert/ponytail",
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/cheetahbyte/pi-cheetahbyte-todo",
     "npm:pi-btw",
-    "npm:pi-claude-code-tui",
     "npm:pi-stats-ext",
     "npm:pi-advisor",
     "npm:@andrewjacop/pi-herdr",
     "npm:@observal/pi-insights",
     "npm:@spences10/pi-telemetry",
-    "npm:pi-metrics",
-    "npm:pi-tool-stats"
+    "npm:pi-tool-stats",
+    "npm:@tintinweb/pi-subagents"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",
@@ -31,7 +29,7 @@
     "openai-codex/gpt-5.6-terra",
     "xai/grok-4.6"
   ],
-  "hideThinkingBlock": true,
+  "hideThinkingBlock": false,
   "uiMode": "fullscreen",
   "disableThinkingBlock": true,
   "tuiMode": "fullscreen"

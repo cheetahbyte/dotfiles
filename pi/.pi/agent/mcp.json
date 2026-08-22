@@ -7,8 +7,9 @@
       ],
       "directTools": true
     },
-    "spokenly": {
-      "url": "http://localhost:51089",
+    "epicure": {
+      "url": "http://127.0.0.1:8080/mcp",
+      "auth": false,
       "directTools": true
     }
   }

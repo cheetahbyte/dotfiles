@@ -10,18 +10,18 @@
   },
   "packages": [
     "npm:pi-mcp-adapter",
-    "npm:pi-lens",
     "git:github.com/DietrichGebert/ponytail",
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/cheetahbyte/pi-cheetahbyte-todo",
     "npm:pi-btw",
     "npm:pi-stats-ext",
     "npm:pi-advisor",
-    "npm:@andrewjacop/pi-herdr",
     "npm:@observal/pi-insights",
     "npm:@spences10/pi-telemetry",
     "npm:pi-tool-stats",
-    "npm:@tintinweb/pi-subagents"
+    "npm:@tintinweb/pi-subagents",
+    "../../Developer/pi-agent-efficiency",
+    "npm:pi-footer"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

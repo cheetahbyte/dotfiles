@@ -73,7 +73,7 @@
           "raw": false,
           "hideWhenEmpty": false,
           "icon": "",
-          "text": "",
+          "text": "none",
           "fg": "magenta",
           "bg": "default",
           "bold": false,
@@ -122,6 +122,36 @@
           "bg": "default",
           "bold": false
         }
+      },
+      {
+        "id": "cache-hit-rate-mt73mwad-k67pb1",
+        "type": "cache-hit-rate",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "hideWhenZero": false,
+          "icon": "",
+          "fg": "cyan",
+          "bg": "default",
+          "bold": false,
+          "cacheHitSource": "session",
+          "style": "default"
+        }
+      },
+      {
+        "id": "event-mt73zppe-yrrq0m",
+        "type": "event",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "hideWhenEmpty": true,
+          "icon": "",
+          "text": "-",
+          "fg": "default",
+          "bg": "default",
+          "bold": false,
+          "widgetId": "subagents"
+        }
       }
     ]
   ],
@@ -139,13 +169,15 @@
       "mcp",
       "pi-herdr",
       "pi-lens-lsp",
-      "ponytail"
+      "ponytail",
+      "subagents"
     ],
     "knownKeys": [
       "mcp",
       "pi-herdr",
       "pi-lens-lsp",
-      "ponytail"
+      "ponytail",
+      "subagents"
     ]
   }
 }

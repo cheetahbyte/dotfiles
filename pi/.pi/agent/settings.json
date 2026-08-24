@@ -19,9 +19,9 @@
     "npm:@observal/pi-insights",
     "npm:@spences10/pi-telemetry",
     "npm:pi-tool-stats",
-    "npm:@tintinweb/pi-subagents",
     "../../Developer/pi-agent-efficiency",
-    "npm:pi-footer"
+    "npm:pi-footer",
+    "git:https://github.com/cheetahbyte/pi-subagents"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

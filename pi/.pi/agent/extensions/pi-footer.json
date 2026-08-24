@@ -33,7 +33,7 @@
       {
         "id": "text-verbosity-mt6a5kkc-nmulbo",
         "type": "text-verbosity",
-        "enabled": true,
+        "enabled": false,
         "options": {
           "raw": false,
           "hideWhenEmpty": false,

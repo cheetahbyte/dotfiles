@@ -14,6 +14,10 @@
     "firecrawl": {
       "url": "https://mcp.firecrawl.dev/v2/mcp-oauth",
       "directTools": false
+    },
+    "cloudflare": {
+      "url": "https://mcp.cloudflare.com/mcp",
+      "directTools": false
     }
   }
 }

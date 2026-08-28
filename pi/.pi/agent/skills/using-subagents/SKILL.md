@@ -1,178 +1,126 @@
 ---
 name: using-subagents
 description: >
-  Guide for delegating work to this project's custom pi subagents:
-  explore, implementer, reviewer, researcher, and security-researcher, specreview.
-  Trigger when a task clearly matches one of these roles.
+  Guide for selectively delegating work to Explore, Implementer, Reviewer,
+  Researcher, SecurityResearcher, and SpecReview when delegation provides
+  a concrete advantage.
 ---
 
-Delegate when subagents can handle the work more cleanly or cheaply. Do not spawn one for trivial edits.
+The main agent owns the task and should normally perform exploration,
+implementation, validation, and integration itself.
 
-The parent agent owns planning, decomposition, coordination, and final integration. Do not give an entire multi-part plan to one general-purpose Implementer.
+Subagents are an optimization, not the default workflow.
+
+## When to delegate
+
+Delegate when at least one of these applies:
+
+- work can run independently in parallel
+- the task would introduce substantial noisy context into the main session
+- an independent second opinion is valuable
+- the work needs specialized instructions or tools
+- a large task has cleanly separable work packages with stable interfaces
+
+Do not delegate merely because an agent role matches the task.
+
+Avoid delegation when:
+
+- the task is small or medium-sized
+- exploration directly informs implementation
+- work is sequential or tightly coupled
+- agents would need overlapping repository context
+- coordination costs more than doing the work directly
 
 ## Agents
 
-| Agent | Use for | Don't use for |
-|---|---|---|
-| `Explore` | Locating files, symbols, references, configuration, patterns, and data flow | Editing, builds, or broad reviews |
-| `Implementer` | One focused, well-scoped change with known target files and targeted verification | Broad repository exploration or executing an entire multi-part plan |
-| `Reviewer` | Reviewing completed changes for bugs and regressions | Style-only feedback, applying fixes, or design docs that describe unwritten code |
-| `Researcher` | Current public information and external documentation | Questions answerable from the repository |
-| `SecurityResearcher` | Auth, injection, crypto, secrets, permissions, and supply-chain risks | Routine code review |
+| Agent | Best use |
+|---|---|
+| `Explore` | Independent or broad repository investigation when isolating discovery is useful |
+| `Implementer` | Independent, well-isolated implementation work that can run concurrently or outside the main context |
+| `Reviewer` | Independent review of substantial completed changes |
+| `Researcher` | External/current information requiring significant research |
+| `SecurityResearcher` | Focused security investigation |
+| `SpecReview` | Independent review of a specification or plan |
 
-Spawn through the `Agent` tool with `subagent_type` matching the agent filename.
+## Default behavior
 
-Agents use `prompt_mode: replace`, so every prompt must include all required context.
+For normal coding tasks:
 
-## Default flow
+    Main agent: explore → implement → validate
 
-Use:
+Do not automatically use:
 
-- `Implementer` when the target files and required change are already clear
-- `Explore → Implementer` when repository discovery is needed
-- `Implementer → Reviewer` for meaningful completed changes
-- `Explore → focused Implementers → Reviewer` for multi-part work
-- `Researcher` for current external information
-- `SecurityResearcher` for security-sensitive work
+    Explore → Implementer → Reviewer
 
-Do not assign discovery, implementation, testing, cleanup, and review to one subagent.
+Instead add subagents only where they improve the task.
 
-## Split implementation work
+Examples:
 
-When a task contains independent or weakly coupled changes, split it into multiple focused Implementers.
+### Good
 
-Each Implementer should receive:
+Main agent implements a feature while Explore independently traces an
+unfamiliar subsystem.
 
-- one concrete responsibility
-- a small set of target files
-- explicit boundaries
-- the relevant part of the plan
-- one focused validation command
+Two Implementers work concurrently on independent packages.
 
-Good split:
+Main agent completes a substantial change, then Reviewer performs an
+independent regression review.
 
-- Implementer A: backend API change
-- Implementer B: frontend integration
-- Implementer C: tests or migration
+Researcher investigates external API behavior while the main agent works
+against the repository.
 
-Bad split:
+### Bad
 
-- one Implementer receives the full backend, frontend, tests, documentation, and cleanup plan
+Spawn Explore to locate two files the main agent could find immediately.
 
-Run Implementers in parallel only when they will not edit overlapping files or depend on unfinished work. Otherwise run them sequentially and pass only the relevant result forward.
+Hand a normal feature to Implementer after the main agent already understands it.
 
-Use one final Reviewer for the combined result.
+Run Reviewer after every small change.
 
-## Explore handoff
+Split sequential backend/frontend work when each step depends heavily on the
+previous one.
 
-Ask Explore for a concise implementation brief containing:
+## Dispatch
 
-- relevant files and symbols
-- current data or control flow
-- existing patterns to follow
-- concrete implementation steps
-- possible work-package boundaries
-- likely validation commands
-- unresolved uncertainties
+Agents use `prompt_mode: replace`, so prompts must contain the context required
+for their isolated task.
 
-Do not pass the full exploration transcript to Implementers.
+Give agents:
 
-## Implementer dispatch requirements
+- concrete objective
+- relevant files/symbols when known
+- boundaries
+- necessary interfaces or assumptions
+- expected validation/output
 
-Do not dispatch an Implementer until the parent knows all of the following:
+Do not pass full conversation history or unrelated plans.
 
-- one concrete outcome
-- exact target files
-- relevant symbols or interfaces
-- required changes
-- an existing pattern to follow, when applicable
-- explicit boundaries and non-goals
-- one exact validation command
-- dependencies on earlier work packages
+## Parallel implementation
 
-If these details are not known, dispatch Explore first.
+Split implementation only when work packages are genuinely independent.
 
-Use this structure for every Implementer prompt:
+Do not run agents concurrently when they:
 
-```text
-Task:
-- One concrete outcome.
+- edit overlapping files
+- depend on unfinished interfaces
+- require frequent coordination
 
-Target files:
-- Exact files expected to change.
+The main agent integrates all results.
 
-Relevant symbols:
-- Functions, types, routes, commands, or interfaces involved.
+## Review
 
-Required changes:
-1. ...
-2. ...
+Use Reviewer when independence provides meaningful value, especially for:
 
-Existing pattern:
-- File and symbol demonstrating the intended approach.
+- large changes
+- risky refactors
+- subtle correctness concerns
+- changes spanning multiple subsystems
 
-Boundaries:
-- Files or components that must not change.
-- Work assigned to other Implementers.
+Reviewers should report material correctness, regression, security, and
+validation issues rather than style-only feedback.
 
-Validation:
-- One exact command to run.
+## Principle
 
-Dependencies:
-- Relevant results or interfaces from earlier tasks.
-```
+Delegation should reduce latency, context pollution, or reasoning risk.
 
-Do not send vague prompts such as “implement this part of the plan” or “explore as needed.”
-
-## Implementer handoff
-
-Give each Implementer only:
-
-* the requirement relevant to its work package
-* the relevant part of the Explore brief
-* exact target files and symbols
-* explicit non-goals
-* expected validation
-* relevant interfaces from prerequisite tasks
-
-Instruct it to:
-
-* avoid broad repository rediscovery
-* begin from the supplied files
-* read only direct dependencies when necessary
-* make the smallest coherent change
-* batch related edits
-* run targeted verification
-* stop and report if the brief is materially wrong
-* not take over unrelated parts of the plan
-
-Do not paste the full plan, previous subagent transcripts, or accumulated task history into later dispatches.
-
-## Reviewer handoff
-
-Give Reviewer the requirement, combined diff, implementation summary, and validation already performed.
-
-Ask it to report only material findings:
-
-* correctness issues
-* regressions
-* broken edge cases
-* security problems
-* missing validation
-
-Send findings back as focused fix tasks. Do not ask one Implementer to redo or re-explore the entire change.
-
-## Avoid duplicate work
-
-Do not:
-
-* let Explore and Implementers repeat the same discovery
-* pass full subagent transcripts between agents
-* give one Implementer the whole project plan
-* dispatch an Implementer with missing files, symbols, boundaries, or validation
-* spawn multiple agents that edit the same files concurrently
-* ask Reviewer to recreate the implementation process
-* run broad test suites when targeted checks are sufficient
-* delegate work whose coordination overhead exceeds the task itself
-
-Delegation should reduce context and duplicated work, not increase it.
+If it does none of those, keep the work in the main agent.

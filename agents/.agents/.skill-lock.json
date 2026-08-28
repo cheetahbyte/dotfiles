@@ -113,7 +113,7 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "skillFolderHash": "0a9b8a7940a3db262e2d4ab18ac994c685838336",
       "installedAt": "2026-08-07T20:15:30.369Z",
-      "updatedAt": "2026-08-23T21:04:12.552Z"
+      "updatedAt": "2026-08-25T12:08:25.502Z"
     },
     "writing-plans": {
       "source": "cheetahbyte/skills",
@@ -122,7 +122,7 @@
       "skillPath": "skills/writing-plans/SKILL.md",
       "skillFolderHash": "a179fda84c5a24f6eacb0b5270111b51bff13154",
       "installedAt": "2026-08-07T20:15:30.370Z",
-      "updatedAt": "2026-08-23T21:04:12.555Z"
+      "updatedAt": "2026-08-25T12:08:25.504Z"
     },
     "humanizer": {
       "source": "blader/humanizer",
@@ -140,7 +140,7 @@
       "skillPath": "skills/pare/SKILL.md",
       "skillFolderHash": "ac2d43c47a59bac369e72da115a33505fe0401aa",
       "installedAt": "2026-08-12T05:35:41.943Z",
-      "updatedAt": "2026-08-23T21:04:12.554Z"
+      "updatedAt": "2026-08-25T12:08:25.503Z"
     },
     "google-developer-docs-style": {
       "source": "cheetahbyte/skills",
@@ -149,7 +149,7 @@
       "skillPath": "skills/google-developer-docs-style/SKILL.md",
       "skillFolderHash": "bcbd2aaa604204aea7f6f99a415557de43f852e2",
       "installedAt": "2026-08-18T15:37:10.329Z",
-      "updatedAt": "2026-08-23T21:04:12.554Z"
+      "updatedAt": "2026-08-25T12:08:25.503Z"
     },
     "engineering-defaults": {
       "source": "cheetahbyte/skills",
@@ -158,16 +158,16 @@
       "skillPath": "skills/engineering-defaults/SKILL.md",
       "skillFolderHash": "86e55f475e9d447b33a30e4969f2134e5f7f2f82",
       "installedAt": "2026-08-21T07:36:07.634Z",
-      "updatedAt": "2026-08-23T21:04:12.553Z"
+      "updatedAt": "2026-08-25T12:08:25.503Z"
     },
     "agy": {
       "source": "cheetahbyte/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/cheetahbyte/skills.git",
       "skillPath": "skills/agy/SKILL.md",
-      "skillFolderHash": "4d5cd64b3f03ae3c7ea250cc8da132f7907209e6",
+      "skillFolderHash": "1320a3caa95059cb2c1fd1d76240e97afe52225e",
       "installedAt": "2026-08-23T21:04:12.550Z",
-      "updatedAt": "2026-08-23T21:04:12.550Z"
+      "updatedAt": "2026-08-25T12:08:25.500Z"
     }
   },
   "dismissed": {

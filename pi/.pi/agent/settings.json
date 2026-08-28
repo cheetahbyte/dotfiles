@@ -12,17 +12,15 @@
     "npm:pi-mcp-adapter",
     "git:github.com/DietrichGebert/ponytail",
     "npm:@juicesharp/rpiv-ask-user-question",
-    "git:github.com/cheetahbyte/pi-cheetahbyte-todo",
     "npm:pi-stats-ext",
     "npm:pi-advisor",
     "npm:@observal/pi-insights",
     "npm:@spences10/pi-telemetry",
     "npm:pi-tool-stats",
-    "../../Developer/pi-agent-efficiency",
     "npm:pi-footer",
     "git:https://github.com/cheetahbyte/pi-subagents",
     "npm:@juicesharp/rpiv-btw",
-    "git:https://github.com/cheetahbyte/pi-header"
+    "git:https://github.com/cheetahbyte/pi-kit"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

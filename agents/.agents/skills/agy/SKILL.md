@@ -20,7 +20,7 @@ Use Agy's configured default model unless the user requests a model.
 Run from the relevant project directory:
 
 ```bash
-agy --sandbox --effort <low|high> --output-format json --print '<self-contained prompt>'
+agy --sandbox --dangerously-skip-permissions --effort <low|high> --output-format json --print '<self-contained prompt>'
 ```
 
 Give Agy the question, relevant context, exact files or diff, constraints, and requested output. Ask it to investigate rather than assume. Read the returned `response`; retain `conversation_id` only for sparring.

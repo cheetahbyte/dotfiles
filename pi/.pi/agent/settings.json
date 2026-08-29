@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.84.3",
+  "lastChangelogVersion": "0.84.4",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-sol",
@@ -20,7 +20,8 @@
     "npm:pi-footer",
     "git:https://github.com/cheetahbyte/pi-subagents",
     "npm:@juicesharp/rpiv-btw",
-    "git:https://github.com/cheetahbyte/pi-kit"
+    "git:https://github.com/cheetahbyte/pi-kit",
+    "npm:pi-cliproxyapi-provider"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

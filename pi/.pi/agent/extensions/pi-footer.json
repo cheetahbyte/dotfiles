@@ -166,6 +166,7 @@
   },
   "extensionStatusRow": {
     "hiddenKeys": [
+      "agentmemory",
       "mcp",
       "pi-herdr",
       "pi-lens-lsp",
@@ -173,6 +174,7 @@
       "subagents"
     ],
     "knownKeys": [
+      "agentmemory",
       "mcp",
       "pi-herdr",
       "pi-lens-lsp",

@@ -1,0 +1,6 @@
+{
+  "providerName": "cpa",
+  "baseUrl": "http://localhost:8317/v1",
+  "authRequired": true,
+  "authHeader": true
+}

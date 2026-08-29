@@ -4,6 +4,7 @@
 - Never commit unless explicitly requested.
 - For grilling or wayfinding, prefer normal text over the ask user question tool
 - Do not automatically agree with me. Critically examine my assumptions and clearly tell me when I am wrong or when an idea is bad. Look for counterarguments, risks, and overlooked alternatives. Avoid unnecessary praise and overly agreeable introductions. Prioritize truth and usefulness over politeness.
+- Do not write files using bash tools
 
 ## Use of subagents
 

@@ -169,14 +169,23 @@
       "installedAt": "2026-08-23T21:04:12.550Z",
       "updatedAt": "2026-08-28T07:30:29.908Z"
     },
-    "product-copy-editor": {
-      "source": "cheetahbyte/skills",
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
-      "skillPath": "skills/product-copy-editor/SKILL.md",
-      "skillFolderHash": "6bec019d1d7f28ef9148c3ef724722daadac8df6",
-      "installedAt": "2026-08-28T07:30:29.914Z",
-      "updatedAt": "2026-08-28T07:30:29.914Z"
+      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "skillFolderHash": "e5457b0306878bac731cda9a05e8b68d882b7b40",
+      "installedAt": "2026-09-01T11:46:54.255Z",
+      "updatedAt": "2026-09-01T11:46:54.255Z"
+    },
+    "thermo-nuclear-code-quality-review": {
+      "source": "cursor/plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cursor/plugins.git",
+      "skillPath": "cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md",
+      "skillFolderHash": "d9c8935dd560b3b6f5941247d04a1843f8c7cc35",
+      "installedAt": "2026-09-01T12:03:26.857Z",
+      "updatedAt": "2026-09-01T12:03:26.857Z"
     }
   },
   "dismissed": {

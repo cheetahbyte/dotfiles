@@ -106,15 +106,6 @@
       "installedAt": "2026-08-07T19:43:13.936Z",
       "updatedAt": "2026-08-07T19:43:13.936Z"
     },
-    "brainstorming": {
-      "source": "cheetahbyte/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
-      "skillPath": "skills/brainstorming/SKILL.md",
-      "skillFolderHash": "0a9b8a7940a3db262e2d4ab18ac994c685838336",
-      "installedAt": "2026-08-07T20:15:30.369Z",
-      "updatedAt": "2026-08-28T07:30:29.911Z"
-    },
     "writing-plans": {
       "source": "cheetahbyte/skills",
       "sourceType": "github",

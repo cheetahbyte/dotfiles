@@ -10,7 +10,7 @@
         "enabled": true,
         "options": {
           "raw": false,
-          "icon": "",
+          "icon": "󰅶 ",
           "fg": "cyan",
           "bg": "default",
           "bold": false
@@ -23,7 +23,7 @@
         "options": {
           "raw": false,
           "hideWhenEmpty": false,
-          "icon": "",
+          "icon": " ",
           "text": "",
           "fg": "magenta",
           "bg": "default",
@@ -168,6 +168,7 @@
     "hiddenKeys": [
       "agentmemory",
       "mcp",
+      "pi-agentation",
       "pi-herdr",
       "pi-lens-lsp",
       "ponytail",
@@ -176,6 +177,7 @@
     "knownKeys": [
       "agentmemory",
       "mcp",
+      "pi-agentation",
       "pi-herdr",
       "pi-lens-lsp",
       "ponytail",

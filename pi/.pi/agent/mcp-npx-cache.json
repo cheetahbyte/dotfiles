@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "entries": {
+    "[\"npx\",\"agentation-mcp\",\"\"]": {
+      "resolvedBin": "/Users/leonhardbreuer/.npm/_npx/cef9b194a47a5767/node_modules/agentation-mcp/dist/cli.js",
+      "resolvedAt": 1788601763143,
+      "packageVersion": "1.2.0",
+      "isJs": true
+    }
+  }
+}

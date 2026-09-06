@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "agentation": {
+      "command": "npx",
+      "args": ["-y", "agentation-mcp", "server"]
+    },
     "duckduckgo": {
       "command": "uvx",
       "args": [
@@ -18,6 +22,10 @@
     "cloudflare": {
       "url": "https://mcp.cloudflare.com/mcp",
       "directTools": false
+    },
+    "cloudflare-docs": {
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+      "directTools": true
     }
   }
 }

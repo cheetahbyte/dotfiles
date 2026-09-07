@@ -3,7 +3,7 @@
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6-astra",
-  "defaultThinkingLevel": "medium",
+  "defaultThinkingLevel": "low",
   "quietStartup": true,
   "terminal": {
     "showImages": false

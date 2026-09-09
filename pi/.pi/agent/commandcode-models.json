@@ -482,6 +482,14 @@
       "maxTokens": 32768
     },
     {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "name": "Ling 3.0 Flash Sante (CC)",
+      "api": "openai-completions",
+      "reasoning": false,
+      "contextWindow": 262144,
+      "maxTokens": 65536
+    },
+    {
       "id": "meta/muse-spark-1.1",
       "name": "Muse Spark 1.1 (CC)",
       "api": "openai-completions",

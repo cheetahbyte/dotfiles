@@ -107,7 +107,7 @@
       "skillPath": "skills/writing-plans/SKILL.md",
       "skillFolderHash": "61ed53ceccd7cc5f781e050f49d69dcba8634ebd",
       "installedAt": "2026-08-07T20:15:30.370Z",
-      "updatedAt": "2026-09-09T18:10:54.547Z"
+      "updatedAt": "2026-09-09T20:00:26.790Z"
     },
     "humanizer": {
       "source": "blader/humanizer",
@@ -126,7 +126,7 @@
       "skillPath": "skills/pare/SKILL.md",
       "skillFolderHash": "ac2d43c47a59bac369e72da115a33505fe0401aa",
       "installedAt": "2026-08-12T05:35:41.943Z",
-      "updatedAt": "2026-09-07T13:31:14.931Z"
+      "updatedAt": "2026-09-09T20:00:26.789Z"
     },
     "google-developer-docs-style": {
       "source": "cheetahbyte/skills",
@@ -135,7 +135,7 @@
       "skillPath": "skills/google-developer-docs-style/SKILL.md",
       "skillFolderHash": "92718a4f768ec5e62c91c55414515801d134fe64",
       "installedAt": "2026-08-18T15:37:10.329Z",
-      "updatedAt": "2026-09-09T18:10:56.707Z"
+      "updatedAt": "2026-09-09T20:00:26.789Z"
     },
     "engineering-defaults": {
       "source": "cheetahbyte/skills",
@@ -144,7 +144,7 @@
       "skillPath": "skills/engineering-defaults/SKILL.md",
       "skillFolderHash": "47bba60f1a5b8743fcebcb0f6abf6c320c5654a6",
       "installedAt": "2026-08-21T07:36:07.634Z",
-      "updatedAt": "2026-09-09T18:10:58.837Z"
+      "updatedAt": "2026-09-09T20:00:26.789Z"
     },
     "agy": {
       "source": "cheetahbyte/skills",
@@ -153,7 +153,7 @@
       "skillPath": "skills/agy/SKILL.md",
       "skillFolderHash": "1320a3caa95059cb2c1fd1d76240e97afe52225e",
       "installedAt": "2026-08-23T21:04:12.550Z",
-      "updatedAt": "2026-09-07T13:31:14.929Z"
+      "updatedAt": "2026-09-09T20:00:26.788Z"
     },
     "copywriting": {
       "source": "coreyhaines31/marketingskills",
@@ -180,7 +180,7 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "skillFolderHash": "0a9b8a7940a3db262e2d4ab18ac994c685838336",
       "installedAt": "2026-09-07T13:31:14.930Z",
-      "updatedAt": "2026-09-07T13:31:14.930Z"
+      "updatedAt": "2026-09-09T20:00:26.788Z"
     },
     "straight-answer": {
       "source": "cheetahbyte/skills",
@@ -189,7 +189,25 @@
       "skillPath": "skills/straight-answer/SKILL.md",
       "skillFolderHash": "fd3de1cf98306644e6512d487cfac6ad36548d0a",
       "installedAt": "2026-09-07T13:31:14.932Z",
-      "updatedAt": "2026-09-07T13:31:14.932Z"
+      "updatedAt": "2026-09-09T20:00:26.789Z"
+    },
+    "obsidian-markdown": {
+      "source": "jamesacarr/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jamesacarr/agent-skills.git",
+      "skillPath": "skills/obsidian-markdown/SKILL.md",
+      "skillFolderHash": "32866fb7cfc3b428805c56063303ffd967cd962a",
+      "installedAt": "2026-09-09T19:57:29.825Z",
+      "updatedAt": "2026-09-09T19:57:29.825Z"
+    },
+    "wiki-maintainer": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cheetahbyte/skills.git",
+      "skillPath": "skills/wiki-maintainer/SKILL.md",
+      "skillFolderHash": "770de22d569c1174c91d0728db91714319c0909c",
+      "installedAt": "2026-09-09T20:00:26.790Z",
+      "updatedAt": "2026-09-09T20:00:26.790Z"
     }
   },
   "dismissed": {
@@ -197,14 +215,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",

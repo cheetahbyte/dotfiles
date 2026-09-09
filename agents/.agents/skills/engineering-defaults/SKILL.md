@@ -48,7 +48,7 @@ Start at step 1 and stop as soon as the project requirements are covered.
 |Linting / formatting|Oxlint + Oxfmt||
 |Testing|Vitest + Playwright|Vitest for unit and integration tests; Playwright for browser flows.|
 |Analytics|None by default|Add analytics only when the project has a concrete measurement need.|
-|Hosting|Cloudflare|prefer targeting static cloudflare pages and separate functions on workers|
+|Hosting|Cloudflare Workers|One Worker serving a static `assets` directory, with an `ASSETS` binding when the app also needs server routes. Not Pages: Cloudflare recommends Workers Static Assets for new projects.|
 |Dedicated backend|Go + sqlc + Gin|Add only when TanStack Start server functions no longer fit, are about to explode|
 
 ## Avoid

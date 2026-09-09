@@ -1,7 +1,6 @@
 ---
 name: writing-plans
-description: Use when you have an approved design/spec for a multi-step task, before touching code
-disable-model-invocation: true
+description: Use when you have an approved design/spec for a multi-step task, before touching code. Follows on from `brainstorming` once its design doc is approved.
 ---
 
 # Writing Plans
@@ -80,9 +79,9 @@ include this section.]
 ### Task N: [Component Name]
 
 **Files:**
-- Create: `exact/path/to/file.py`
-- Modify: `exact/path/to/existing.py:123-145`
-- Test: `tests/exact/path/to/test.py`
+- Create: `exact/path/to/file.ts`
+- Modify: `exact/path/to/existing.ts:123-145`
+- Test: `exact/path/to/file.test.ts`
 
 **Interfaces:**
 - Consumes: [what this task uses from earlier tasks — exact signatures]
@@ -92,34 +91,38 @@ include this section.]
 
 - [ ] **Step 1: Write the failing test**
 
-```python
-def test_specific_behavior():
-    result = function(input)
-    assert result == expected
+```ts
+import { expect, test } from "vitest";
+import { slugify } from "./slugify";
+
+test("lowercases and hyphenates a title", () => {
+  expect(slugify("Hello World")).toBe("hello-world");
+});
 ```
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `pytest tests/path/test.py::test_name -v`
-Expected: FAIL with "function not defined"
+Run: `bun run vitest run src/path/slugify.test.ts -t "lowercases and hyphenates a title"`
+Expected: FAIL with "slugify is not exported"
 
 - [ ] **Step 3: Write minimal implementation**
 
-```python
-def function(input):
-    return expected
+```ts
+export function slugify(title: string): string {
+  return title.toLowerCase().replaceAll(" ", "-");
+}
 ```
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `pytest tests/path/test.py::test_name -v`
+Run: `bun run vitest run src/path/slugify.test.ts -t "lowercases and hyphenates a title"`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add tests/path/test.py src/path/file.py
-git commit -m "feat: add specific feature"
+git add src/path/slugify.ts src/path/slugify.test.ts
+git commit -m "feat: add slugify"
 ```
 ````
 

@@ -30,7 +30,16 @@ Mnemo is the shared memory store backing [[Hermes]] and the laptop coding agents
 ...
 ```
 
-Filename = the note's title, in the user's existing casing convention (check a few files before creating the first one; Obsidian resolves links by title, so a mismatch silently creates orphans).
+## Naming
+
+Titles are resolved vault-wide, not per folder, so two notes named `Release procedure.md` in different project folders collide — Obsidian falls back to path-qualified links, which break on move and hide from a title search.
+
+The test: **the title must stand alone inside a wikilink.** If `[[X]]` appeared in an unrelated note, would you know what it is? `[[Release procedure]]` fails; `[[Kepler release procedure]]` passes. Qualify generic nouns (release procedure, architecture, roadmap, notes) with their project or subject. Leave already-unique names bare — `Mnemo.md`, not `Mnemo overview.md`.
+
+- Spaces, not kebab or snake — titles are typed inline as prose.
+- Sentence case, unless the existing vault says otherwise. Match what's there; check a few files before creating the first note.
+- Never use `#`, `^`, `|`, `[`, `]` in a filename. They are wikilink syntax and will break the link.
+- Dates only for genuinely dated notes, ISO and suffixed so they sort: `Kepler standup 2026-03-14`.
 
 ## Before writing anything
 
@@ -67,6 +76,18 @@ Single mentions with nowhere to go are the only legitimate use of `Inbox/`. Re-f
 | `Inbox/` | Genuinely unroutable | Only after trying the five above |
 
 `Sources/` holds the artifact; `Knowledge/` holds what you learned from it, linking back with `[[source note]]`. Never put extracted claims in `Sources/`.
+
+Keep every folder flat except `Projects/`. Wikilinks resolve by title, not path, so nesting adds a routing decision at write time without improving retrieval — and a note filed under two plausible paths defeats the duplicate search above. If a flat folder feels crowded, add tags, not depth.
+
+A project may have its own folder when it owns artifacts that get archived with it. The canonical note takes the folder's name:
+
+```text
+Projects/
+  Mnemo/
+    Mnemo.md          # canonical note
+    Meetings/
+    schema-v2.md
+```
 
 ## When a fact changes
 

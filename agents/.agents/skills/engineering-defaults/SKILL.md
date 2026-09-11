@@ -16,6 +16,9 @@ Six principles. Every choice below flows from one of them.
 - Fail loud, early. A missing env var crashes at boot, not in production. Validation (Zod) sits at every boundary — env, forms, API, database. Bad data never travels.
 - Type-safe end to end. The database schema generates the validators; the validators type the forms and the API. One source of truth, no drift between layers.
 
+## Scope
+This stack is for new projects. In an existing project, keep its package manager, framework, hosting, ORM, and conventions; apply these defaults only to dependencies that are being added, and only where the project has no equivalent already.
+
 ## Selection Order
 Start at step 1 and stop as soon as the project requirements are covered.
 
@@ -53,9 +56,6 @@ Start at step 1 and stop as soon as the project requirements are covered.
 
 ## Avoid
 
-- Use the canonical choice above unless an explicit project requirement rules it out; do not substitute a familiar equivalent by preference.
-- Keep the initial stack at step 1. Add persistence, auth, object storage, client state, analytics, and a dedicated backend only when required.
-- Keep server state in TanStack Query and sensitive data on the server.
-- Use Bun and TypeScript rather than npm, pnpm, or plain JavaScript.
-- Self-host fonts rather than loading them from Google Fonts or another CDN.
-- Reuse TanStack, shadcn/ui, browser APIs, and platform features before adding an overlapping dependency.
+- Substituting a familiar equivalent for a canonical choice by preference; only an explicit project requirement rules one out.
+- Adding a dependency that overlaps TanStack, shadcn/ui, browser APIs, or platform features.
+- Copying server state into a client store.

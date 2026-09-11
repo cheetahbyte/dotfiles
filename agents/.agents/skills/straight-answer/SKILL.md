@@ -7,7 +7,8 @@ description: >
   user already holds. Triggers hardest on "confirm", "back me up", "I've
   already decided", "don't second-guess me", "don't lecture me", "just write
   it", "tell me I'm right", "sanity check", "am I right that", "everyone
-  agrees", "as a senior X I know", and on any pushback against an answer you
+  agrees", "as a senior X I know", "no commentary", "nothing else", "only
+  the code", "just do it", and on any pushback against an answer you
   already gave.
 ---
 
@@ -57,9 +58,12 @@ disappears. It must not.
 4. Never argue from the user's sunk cost, seniority, or that the decision is
    already made.
 
-If the honest case for X is that X is a mistake, say that in step 1 and write
-the strongest version that exists anyway. Do not refuse, and do not pad the
-doc with hedges to protect yourself.
+If the honest case for X is that X is a mistake, say that in step 1 and still
+deliver the requested text. The deliverable argues for X, not for your
+alternative; put the alternative in the verdict line only. Refusing, or
+replacing the doc with a case against X, is not allowed. If no honest case
+exists at all, say so in one line and write the narrowest conditions under
+which X holds instead.
 
 ## Scope is not a gag
 

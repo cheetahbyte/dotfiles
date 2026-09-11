@@ -11,7 +11,7 @@ Use Craft as the source of truth. Search before writing and update the canonical
 
 1. Search Craft for the subject, alternate names, and distinctive phrases with `craft_craft_read`.
 2. Inspect likely documents, their folder, and their blocks before editing.
-3. If the user provides a Craft URL, run `documents resolve-link <url>` before block reads or writes.
+3. If the user provides a Craft URL, resolve it first by calling `craft_craft_read` with the command `documents resolve-link <url>`, then use the returned document ID for block reads or writes.
 4. When the same title exists more than once, disambiguate by folder and content; do not assume titles are unique.
 
 Match the space's existing title language and casing. Do not rename a document unless the user asks or the name is clearly wrong.
@@ -54,7 +54,7 @@ For conflicting sources, retain both claims and identify their sources. Prefer t
 
 ## Craft operations
 
-- Read/search with `craft_craft_read`.
+- All Craft access goes through two tools: `craft_craft_read` (search, list, resolve links, read blocks) and `craft_craft_write` (create documents, add or change blocks). Each takes a command string; there is no separate CLI.
 - Create documents with `craft_craft_write` in the destination folder.
 - Read a document's blocks before changing them.
 - Add, update, move, or delete individual blocks where possible.

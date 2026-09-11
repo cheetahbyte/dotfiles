@@ -18,7 +18,6 @@
     "npm:@spences10/pi-telemetry",
     "npm:pi-tool-stats",
     "npm:pi-footer",
-    "git:https://github.com/cheetahbyte/pi-subagents",
     "npm:@juicesharp/rpiv-btw",
     "git:https://github.com/cheetahbyte/pi-kit",
     "npm:pi-agentation",

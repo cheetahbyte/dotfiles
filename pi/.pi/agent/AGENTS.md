@@ -10,18 +10,4 @@
 
 Refer to `/using-subagents`.
 
-The main agent should perform normal repository exploration, implementation,
-validation, and integration itself.
-
-Use subagents selectively when they provide a concrete advantage, especially:
-
-- independent parallel investigation
-- isolating large/noisy context
-- specialized external or security research
-- independent review of substantial changes
-- clearly separable implementation work with little coordination overhead
-
-Do not delegate routine repository navigation, small or medium implementation
-tasks, or sequential work that benefits from retaining one continuous context.
-
-Prefer the main agent when uncertain.
+Use subagents only when they provide a concrete advantage; otherwise perform repository exploration, implementation, validation, and integration yourself. Prefer them for independent parallel investigation, large or noisy context, specialized external or security research, substantial independent review, or clearly separable low-coordination work.

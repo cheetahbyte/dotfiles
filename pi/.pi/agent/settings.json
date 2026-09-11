@@ -22,7 +22,8 @@
     "npm:@juicesharp/rpiv-btw",
     "git:https://github.com/cheetahbyte/pi-kit",
     "npm:pi-agentation",
-    "npm:@sting8k/pi-vcc"
+    "npm:@sting8k/pi-vcc",
+    "git:https://github.com/cheetahbyte/pi-claude-bridge"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

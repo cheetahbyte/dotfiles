@@ -23,7 +23,7 @@
     "npm:pi-agentation",
     "npm:@sting8k/pi-vcc",
     "git:https://github.com/cheetahbyte/pi-claude-bridge",
-    "git:https://github.com/cheetahbyte/pi-subagents"
+    "npm:@fyeeme/pi-hooks"
   ],
   "enabledModels": [
     "openai-codex/gpt-5.6-sol",

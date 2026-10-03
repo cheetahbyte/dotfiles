@@ -1,6 +1,6 @@
 {
-  "lastChangelogVersion": "1.0.0",
-  "theme": "dark",
+  "lastChangelogVersion": "1.0.1",
+  "theme": "light/dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6-astra",
   "defaultThinkingLevel": "low",

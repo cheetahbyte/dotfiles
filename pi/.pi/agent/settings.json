@@ -1,0 +1,37 @@
+{
+  "lastChangelogVersion": "1.0.0",
+  "theme": "dark",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-6-astra",
+  "defaultThinkingLevel": "low",
+  "quietStartup": true,
+  "terminal": {
+    "showImages": false
+  },
+  "packages": [
+    "npm:pi-stats-ext",
+    "npm:@observal/pi-insights",
+    "npm:@spences10/pi-telemetry",
+    "npm:pi-tool-stats",
+    "npm:pi-footer",
+    "npm:@juicesharp/rpiv-btw",
+    "git:https://github.com/cheetahbyte/pi-kit",
+    "npm:pi-agentation",
+    "npm:@fyeeme/pi-hooks",
+    "npm:@that-yolanda/pi-context",
+    "npm:pi-hot-compact",
+    "npm:@cheetahbyte/pi-subagents",
+    "npm:pi-web-access"
+  ],
+  "enabledModels": [
+    "openai-codex/gpt-6-astra",
+    "openai-codex/gpt-6.1-sol"
+  ],
+  "hideThinkingBlock": false,
+  "uiMode": "fullscreen",
+  "disableThinkingBlock": true,
+  "tuiMode": "fullscreen",
+  "npmCommand": [
+    "bun"
+  ]
+}

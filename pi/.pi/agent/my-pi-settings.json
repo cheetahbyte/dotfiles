@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"extensions": {
+		"enabled": {}
+	},
+	"trust": {},
+	"packages": {
+		"telemetry": {
+			"version": 1,
+			"enabled": true
+		}
+	}
+}

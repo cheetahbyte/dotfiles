@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "brainstorming": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "computedHash": "b4fdcfa37237309a20bb58107e4af87f9e7617be6c91ec99ccfbc009079b7977"
+    },
+    "pare": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pare/SKILL.md",
+      "computedHash": "923e9bbe910d46a905d3a35c25fb7612717371c88f8a07a6a33f4433673d1b45"
+    },
+    "writing-plans": {
+      "source": "cheetahbyte/skills",
+      "sourceType": "github",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "computedHash": "f518cc076fccf213b8838ae2b660fe7448e0baac54ff4e37a9f85184b49471ae"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$HOME/.agents/hooks/terse-context.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

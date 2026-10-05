@@ -1,31 +1,23 @@
 {
-  "lastChangelogVersion": "1.0.1",
+  "lastChangelogVersion": "1.0.3",
   "theme": "light/dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-6-astra",
+  "defaultModel": "gpt-6-astra-fast",
   "defaultThinkingLevel": "low",
   "quietStartup": true,
   "terminal": {
-    "showImages": false
+    "showImages": true
   },
   "packages": [
-    "npm:pi-stats-ext",
-    "npm:@observal/pi-insights",
-    "npm:@spences10/pi-telemetry",
-    "npm:pi-tool-stats",
-    "npm:pi-footer",
-    "npm:@juicesharp/rpiv-btw",
-    "git:https://github.com/cheetahbyte/pi-kit",
-    "npm:pi-agentation",
-    "npm:@fyeeme/pi-hooks",
-    "npm:@that-yolanda/pi-context",
-    "npm:pi-hot-compact",
-    "npm:@cheetahbyte/pi-subagents",
-    "npm:pi-web-access"
+    "git:https://github.com/cheetahbyte/pi-kit"
   ],
   "enabledModels": [
-    "openai-codex/gpt-6-astra",
-    "openai-codex/gpt-6.1-sol"
+    "openai-codex/gpt-6.1-sol",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-6.1-sol-fast",
+    "openai-codex/gpt-6-astra-fast",
+    "claude-sub/claude-opus-5-5",
+    "claude-sub/claude-fable-5-1"
   ],
   "hideThinkingBlock": false,
   "uiMode": "fullscreen",
@@ -33,5 +25,10 @@
   "tuiMode": "fullscreen",
   "npmCommand": [
     "bun"
-  ]
+  ],
+  "modelThinkingLevels": {
+    "openai-codex/gpt-6-astra": "medium",
+    "openai-codex/gpt-6.1-sol-fast": "medium",
+    "openai-codex/gpt-6-astra-fast": "medium"
+  }
 }

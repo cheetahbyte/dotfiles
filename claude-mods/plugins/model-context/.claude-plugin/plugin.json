@@ -1,0 +1,6 @@
+{
+  "name": "model-context",
+  "version": "0.1.0",
+  "description": "Shows the current model and context window fill at the end of the prompt footer line",
+  "types": "./types/index.d.ts"
+}

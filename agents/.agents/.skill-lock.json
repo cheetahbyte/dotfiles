@@ -133,15 +133,6 @@
       "installedAt": "2026-09-01T11:46:54.255Z",
       "updatedAt": "2026-10-03T19:14:34.213Z"
     },
-    "thermo-nuclear-code-quality-review": {
-      "source": "cursor/plugins",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/cursor/plugins.git",
-      "skillPath": "cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md",
-      "skillFolderHash": "d9c8935dd560b3b6f5941247d04a1843f8c7cc35",
-      "installedAt": "2026-09-01T12:03:26.857Z",
-      "updatedAt": "2026-09-01T12:03:26.857Z"
-    },
     "straight-answer": {
       "source": "cheetahbyte/skills",
       "sourceType": "github",

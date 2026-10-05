@@ -1,0 +1,14 @@
+{
+  "name": "dotfiles-mods",
+  "description": "Personal Claude Code mods",
+  "owner": {
+    "name": "Leonhard Breuer"
+  },
+  "plugins": [
+    {
+      "name": "model-context",
+      "source": "./plugins/model-context",
+      "description": "Shows the model, context window fill, cost and token counts in the prompt footer line"
+    }
+  ]
+}

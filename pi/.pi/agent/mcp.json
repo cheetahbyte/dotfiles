@@ -1,13 +1,8 @@
 {
   "mcpServers": {
-    "context7": {
-      "url": "https://mcp.context7.com/mcp/oauth"
-    },
-    "cloudflare": {
-      "url": "https://mcp.cloudflare.com/mcp"
-    },
-    "porkbun": {
-      "url": "https://mcp.porkbun.com/mcp"
+    "executor": {
+      "url": "https://executor.sh/leonhard-breuer-s-organization/mcp",
+      "exposure": "direct"
     },
     "pencil": {
       "transport": "stdio",

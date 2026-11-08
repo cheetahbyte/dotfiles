@@ -1,6 +1,6 @@
 ---
 description: Read-only codebase investigation for locating files, tracing behavior, and answering bounded questions; use direct tools for a known-file lookup
-model: openai-codex/gpt-5.6-luna
+model: openai/gpt-6-luna
 thinking: medium
 tools: read, grep, find, bash, ls
 extensions: false

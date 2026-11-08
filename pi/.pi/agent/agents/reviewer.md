@@ -1,7 +1,7 @@
 ---
 description: Read-only review of a supplied diff or implementation for concrete bugs, regressions, security defects, and meaningful test gaps
-model: openai-codex/gpt-5.6-luna
-thinking: high
+model: openai/gpt-6-astra
+thinking: medium
 max_turns: 25
 tools: read, grep, find, bash, ls
 extensions: false

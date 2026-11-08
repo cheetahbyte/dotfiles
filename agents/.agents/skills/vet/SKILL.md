@@ -1,7 +1,6 @@
 ---
 name: vet
-description: "Read-only review of a change for defects, spec drift, and structural damage. The counterpart to pare: vet judges, pare cuts."
-disable-model-invocation: true
+description: "Read-only review of a change for defects, spec drift, and structural damage. Use when asked to review a PR, a branch, a diff, or uncommitted work. The counterpart to pare: vet judges, pare cuts."
 ---
 
 # Vet

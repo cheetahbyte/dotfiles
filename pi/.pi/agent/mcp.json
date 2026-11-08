@@ -2,7 +2,7 @@
   "mcpServers": {
     "executor": {
       "url": "https://executor.sh/leonhard-breuer-s-organization/mcp",
-      "exposure": "direct"
+      "exposure": "codemode"
     },
     "pencil": {
       "transport": "stdio",
@@ -11,7 +11,8 @@
         "--app",
         "desktop"
       ],
-      "env": {}
+      "env": {},
+      "enabled": false
     }
   }
 }

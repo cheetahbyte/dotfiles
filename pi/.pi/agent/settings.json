@@ -1,23 +1,24 @@
 {
-  "lastChangelogVersion": "1.0.4",
+  "lastChangelogVersion": "1.5.0",
   "theme": "light/dark",
-  "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-6.1-sol-fast",
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-6.1-sol",
   "defaultThinkingLevel": "low",
   "quietStartup": true,
   "terminal": {
     "showImages": true
   },
   "packages": [
+    "npm:@ff-labs/pi-fff",
+    "npm:@tintinweb/pi-subagents",
     "git:https://github.com/cheetahbyte/pi-kit"
   ],
   "enabledModels": [
-    "openai-codex/gpt-6.1-sol",
-    "openai-codex/gpt-5.6-sol",
-    "openai-codex/gpt-6.1-sol-fast",
-    "openai-codex/gpt-6-astra-fast",
     "claude-sub/claude-opus-5-5",
-    "claude-sub/claude-fable-5-1"
+    "claude-sub/claude-fable-5-1",
+    "openai/gpt-6.1-sol",
+    "openai/gpt-6-astra",
+    "openai/gpt-6.1-terra"
   ],
   "hideThinkingBlock": false,
   "uiMode": "fullscreen",
@@ -28,8 +29,20 @@
   ],
   "modelThinkingLevels": {
     "openai-codex/gpt-6-astra": "medium",
-    "openai-codex/gpt-6.1-sol-fast": "medium",
+    "openai-codex/gpt-6.1-sol-fast": "low",
     "openai-codex/gpt-6-astra-fast": "medium",
-    "claude-sub/claude-opus-5-5": "medium"
+    "claude-sub/claude-opus-5-5": "minimal",
+    "zai/glm-5.3": "high",
+    "openai-codex/gpt-6.1-sol": "low",
+    "opencode-go/deepseek-v4.1-flash": "high",
+    "openai/gpt-6.1-sol": "medium",
+    "openai/gpt-6-astra": "medium",
+    "melious/deepseek-v4.1-flash-1017": "medium",
+    "openai/gpt-6.1-terra": "medium"
+  },
+  "deviceId": "65c039ae-51d4-4dba-8445-3dee6a69611b",
+  "extensionChangelogVersions": {
+    "{\"source\":\"git:https://github.com/cheetahbyte/pi-kit\",\"scope\":\"user\"}": "0.3.0",
+    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.23.1"
   }
 }

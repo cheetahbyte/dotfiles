@@ -1,10 +1,8 @@
 ---
-description: Delegate a task to the Security researcher subagent
-argument-hint: "<question or search task>"
+description: Security review using the security-audit skill
+argument-hint: "<target or question>"
 ---
 
-Launch the Security researcher subagent in the foreground for this task:
+Load the `security-audit` skill and apply it to this task:
 
 $ARGUMENTS
-
-Return its findings without duplicating its investigation.

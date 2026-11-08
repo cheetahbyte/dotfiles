@@ -1,6 +1,6 @@
 ---
 name: google-developer-docs-style
-description: Apply Google developer documentation style to technical docs, README files, tutorials, how-to guides, API references, and UI instructions. Use when writing, editing, reviewing, or restructuring developer-facing documentation in Markdown or HTML.
+description: Apply Google developer documentation style to developer-facing prose. Use only when writing or editing a documentation file (README, guide, tutorial, API reference) or UI instructions; not for code, commits, PR bodies, or chat replies.
 ---
 
 # Google developer documentation style
